@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./static/css/styles.css" rel="stylesheet">
+		<title>Vibhek Soni - Portfolio</title>
+	</head>
+	<body class="bg-black text-white font-sans">
+		<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/80 border-b border-white/10">
+			<div class="container mx-auto px-4 py-4">
+				<nav class="flex justify-between items-center">
+					<a href="#" class="text-2xl font-bold bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text hover:scale-105 transition-transform">VS.</a>
+
+					<button class="md:hidden text-white hover:text-accent transition" id="menuBtn">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+						</svg>
+					</button>
+
+					<div class="hidden md:flex space-x-8">
+						<a href="#about" class="nav-link hover:text-accent transition-all py-2">About</a>
+						<a href="#skills" class="nav-link hover:text-accent transition-all py-2">Skills</a>
+						<a href="#experience" class="nav-link hover:text-accent transition-all py-2">Experience</a>
+                        <a href="#security" class="nav-link hover:text-accent transition-all py-2">Security Research</a>
+						<a href="#education" class="nav-link hover:text-accent transition-all py-2">Education</a>
+						<a href="#hobbies" class="nav-link hover:text-accent transition-all py-2">Hobbies</a>
+						<a href="#projects" class="nav-link hover:text-accent transition-all py-2">Projects</a>
+						<a href="#contact" class="nav-link hover:text-accent transition-all py-2">Contact</a>
+					</div>
+
+					<div class="mobile-menu hidden fixed top-[72px] left-0 right-0 bg-black/95 backdrop-blur-md border-b border-white/10 p-4 md:hidden">
+						<div class="flex flex-col space-y-4">
+							<a href="#about" class="nav-link hover:text-accent transition-all py-2">About</a>
+							<a href="#skills" class="nav-link hover:text-accent transition-all py-2">Skills</a>
+							<a href="#experience" class="nav-link hover:text-accent transition-all py-2">Experience</a>
+                            <a href="#security" class="nav-link hover:text-accent transition-all py-2">Security Research</a>
+							<a href="#education" class="nav-link hover:text-accent transition-all py-2">Education</a>
+							<a href="#hobbies" class="nav-link hover:text-accent transition-all py-2">Hobbies</a>
+							<a href="#projects" class="nav-link hover:text-accent transition-all py-2">Projects</a>
+							<a href="#contact" class="nav-link hover:text-accent transition-all py-2">Contact</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main class="pt-20">
+			<section class="min-h-screen relative flex items-center justify-center px-4 overflow-hidden">
+
+				<div class="absolute inset-0 hero-gradient"></div>
+
+				<div class="container mx-auto max-w-6xl relative z-10">
+					<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+						<div class="md:order-2 relative">
+							<div class="floating">
+								<img src="https://avatars.githubusercontent.com/u/102437829?v=4" alt="Vibhek Soni" class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-2 border-accent/50 image-glow">
+								<div class="absolute inset-0 rounded-full bg-accent/10 backdrop-blur-sm -z-10"></div>
+							</div>
+						</div>
+
+						<div class="md:order-1 text-center md:text-left max-w-2xl">
+							<h1 class="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white to-gray-400 text-transparent bg-clip-text">
+								Vibhek Soni
+							</h1>
+							<p class="text-xl md:text-2xl text-gray-300 mb-6">Full Stack Developer</p>
+							<div class="space-y-4">
+								<p class="text-gray-400 leading-relaxed">
+									Passionate about creating innovative solutions with modern technologies.
+																		Specialized in Python, Flask, and high-performance web applications.
+								</p>
+								<div class="flex flex-wrap gap-4 justify-center md:justify-start">
+									<a href="#contact" class="bg-accent px-8 py-3 rounded-full hover:bg-accent/80 transition-all transform hover:scale-105">
+										Get in touch
+									</a>
+									<a href="#about" class="border border-accent/50 px-8 py-3 rounded-full hover:bg-accent/10 transition-all transform hover:scale-105">
+										Learn more
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="absolute inset-0 -z-10 opacity-100">
+					<div class="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 hidden md:block">
+						<svg class="w-24 h-24" viewbox="0 0 24 24" fill="white">
+							<path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09-.33.22zM21.1 6.11l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01.21.03zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z"/>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 id="about-me" class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">About Me</h2>
+					<div class="space-y-8">
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<p>I'm a 19-year-old full-stack developer from New York with 6 years of coding experience. Currently pursuing my bachelor's in computer science at Queens College, I specialize in Python, Flask, and various modern technologies.</p>
+						</div>
+
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<p>I'm passionate about coding and have been programming since a young age. I enjoy working on innovative projects and constantly expanding my skill set. With expertise in areas like:</p>
+							<ul class="list-disc ml-6 mt-2">
+								<li>Server management</li>
+								<li>Backend optimization</li>
+								<li>High-traffic application handling</li>
+							</ul>
+						</div>
+
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<p>When I'm not coding, you can find me exploring new technologies, brainstorming ideas for upcoming projects, and sharing my knowledge with others. I believe in the power of technology to make a positive impact and am dedicated to contributing to the field.</p>
+						</div>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</section>
+
+			<section id="skills" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">Skills</h2>
+					<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/python.png" alt="Python" class="h-12 w-12 mb-3">
+							<span class="font-semibold">Python3</span>
+						</div>
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/flask.png" alt="Flask" class="h-12 w-12 mb-3">
+							<span class="font-semibold">Flask</span>
+						</div>
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/mysql.png" alt="MySQL" class="h-12 w-12 mb-3">
+							<span class="font-semibold">MySQL</span>
+						</div>
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/css3.png" alt="TailwindCSS" class="h-12 w-12 mb-3">
+							<span class="font-semibold">TailwindCSS</span>
+						</div>
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/docker.png" alt="Docker" class="h-12 w-12 mb-3">
+							<span class="font-semibold">Docker</span>
+						</div>
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/git.png" alt="Git" class="h-12 w-12 mb-3">
+							<span class="font-semibold">Git</span>
+						</div>
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/redis.png" alt="Redis" class="h-12 w-12 mb-3">
+							<span class="font-semibold">Redis</span>
+						</div>
+						<div class="gradient-border p-6 flex flex-col items-center transform hover:scale-[1.05] transition-all">
+							<img src="https://img.icons8.com/ios/50/ffffff/c-plus-plus.png" alt="C/C++" class="h-12 w-12 mb-3">
+							<span class="font-semibold">C/C++</span>
+						</div>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</section>
+
+			<section id="experience" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">Experience</h2>
+					<div class="space-y-6">
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<p class="text-gray-300 leading-relaxed">With over six years of coding experience, I have worked on various projects such as LlmEndpoint, Proxyit, and HostQuick. I have expertise in creating custom systems for server management, backend optimization, and handling high-traffic applications.</p>
+						</div>
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<p class="text-gray-300 leading-relaxed">I specialize in Python and have in-depth knowledge of frameworks like Flask. I'm skilled in database management with MySQL and Redis, and proficient in front-end technologies like HTML, CSS, JavaScript, and TailwindCSS.</p>
+						</div>
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<p class="text-gray-300 leading-relaxed">Additionally, I have experience with tools such as Docker for containerization, Git for version control, and Cloudflare for DDoS protection and caching. I'm well-versed in Linux server management, including configuring firewalls with iptables.</p>
+						</div>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</section>
+
+			<section id="security" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">
+						Security Research & Automation
+					</h2>
+					<div
+						class="space-y-6">
+						
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 class="text-xl font-bold">Web Automation & Scraping</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-accent">Active Research</span>
+							</div>
+							<p class="text-gray-300 leading-relaxed">
+								Experienced in developing sophisticated web automation solutions using Selenium and BeautifulSoup4. 
+								                    Specialized in creating efficient data extraction pipelines and automated testing systems.
+							</p>
+							<div class="mt-4 flex flex-wrap gap-2">
+								<span class="px-3 py-1 text-sm gradient-border">Selenium</span>
+								<span class="px-3 py-1 text-sm gradient-border">BeautifulSoup4</span>
+								<span class="px-3 py-1 text-sm gradient-border">Requests</span>
+								<span class="px-3 py-1 text-sm gradient-border">Python</span>
+							</div>
+						</div>
+
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 class="text-xl font-bold">Security Research</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-accent">Ongoing</span>
+							</div>
+							<p class="text-gray-300 leading-relaxed mb-4">
+								Dedicated to understanding and improving web security through practical research. Experienced in:
+							</p>
+							<ul class="list-disc ml-6 text-gray-300 space-y-2">
+								<li>API vulnerability assessment and security testing</li>
+								<li>Authentication bypass analysis</li>
+								<li>Network traffic analysis and API reverse engineering</li>
+								<li>Security flaw detection in web applications</li>
+							</ul>
+						</div>
+
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 class="text-xl font-bold">Ethical Hacking & Research</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-accent">Continuous Learning</span>
+							</div>
+							<p class="text-gray-300 leading-relaxed mb-4">
+								Passionate about discovering and understanding security vulnerabilities to build more secure applications. Key areas include:
+							</p>
+							<ul class="list-disc ml-6 text-gray-300 space-y-2">
+								<li>Chrome extension security analysis</li>
+								<li>Authentication system vulnerabilities</li>
+								<li>API rate limiting bypass research</li>
+								<li>Security implementation best practices</li>
+							</ul>
+							<p class="text-gray-300 mt-4 leading-relaxed">
+								This research directly influences my development practices, ensuring robust security measures in my own projects.
+							</p>
+						</div>
+
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 class="text-xl font-bold">Developer Tools & Analysis</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-accent">Active Use</span>
+							</div>
+							<p class="text-gray-300 leading-relaxed">
+								Proficient in using browser developer tools for deep analysis of web applications, including network traffic monitoring, 
+								                    API behavior analysis, and performance optimization. This expertise helps in building more secure and efficient applications 
+								                    by learning from both successful implementations and common vulnerabilities.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</section>
+
+			<section id="education" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">Education</h2>
+					<div class="space-y-4">
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<h3 class="text-xl font-semibold mb-2">Queens College, New York</h3>
+							<p class="text-gray-300">B.Sc. in Computer Science (Ongoing)</p>
+						</div>
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<h3 class="text-xl font-semibold mb-2">Richmond Hill High School</h3>
+							<p class="text-gray-300">High School Diploma</p>
+						</div>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</section>
+
+			<section id="hobbies" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">Hobbies</h2>
+					<div class="grid md:grid-cols-2 gap-6">
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<h3 class="text-xl font-semibold mb-3">Programming</h3>
+							<p class="text-gray-300">Coding personal projects and exploring new technologies to expand my skillset.</p>
+						</div>
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<h3 class="text-xl font-semibold mb-3">Open Source</h3>
+							<p class="text-gray-300">Contributing to open source projects and helping fellow developers grow.</p>
+						</div>
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<h3 class="text-xl font-semibold mb-3">Tech Exploration</h3>
+							<p class="text-gray-300">Staying up-to-date with the latest technologies and industry trends.</p>
+						</div>
+						<div class="gradient-border p-6 transform hover:scale-[1.02] transition-all">
+							<h3 class="text-xl font-semibold mb-3">Outdoor Activities</h3>
+							<p class="text-gray-300">Maintaining an active lifestyle and enjoying outdoor adventures.</p>
+						</div>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</section>
+
+			<section id="projects" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 id="projects" class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">Projects</h2>
+					<div
+						class="grid md:grid-cols-2 gap-8">
+						
+						<div class="gradient-border p-8 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 id="llmendpoint" class="text-2xl font-bold">LlmEndpoint</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-green-400">Active</span>
+							</div>
+							<p class="text-gray-300 mb-6 leading-relaxed">
+								AI text generation API offering seamless integration and competitive pricing. Features include user authentication, dashboard analytics, API usage tracking, real-time AI chat testing, and comprehensive documentation.
+							</p>
+							<div class="space-y-4 mb-6">
+								<div>
+									<h4 class="text-sm uppercase text-gray-500 mb-2">Tech Stack</h4>
+									<div class="flex flex-wrap gap-2">
+										<span class="px-3 py-1 text-sm gradient-border">Python</span>
+										<span class="px-3 py-1 text-sm gradient-border">Flask</span>
+										<span class="px-3 py-1 text-sm gradient-border">MySQL</span>
+										<span class="px-3 py-1 text-sm gradient-border">Redis</span>
+										<span class="px-3 py-1 text-sm gradient-border">Cloudflare</span>
+									</div>
+								</div>
+							</div>
+							<a href="https://llmendpoint.com/" class="text-accent hover:text-blue-400 transition-colors flex items-center gap-2" target="_blank">
+								View Project
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+								</svg>
+							</a>
+						</div>
+
+						<div class="gradient-border p-8 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 id="proxyit" class="text-2xl font-bold">Proxyit</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-green-400">Active</span>
+							</div>
+							<p class="text-gray-300 mb-6 leading-relaxed">
+								IP cloaking service with advanced DDOS protection and custom firewall solutions. Offers both free and premium tiers with custom port selection and enhanced protection on premium servers.
+							</p>
+							<div class="space-y-4 mb-6">
+								<div>
+									<h4 class="text-sm uppercase text-gray-500 mb-2">Tech Stack</h4>
+									<div class="flex flex-wrap gap-2">
+										<span class="px-3 py-1 text-sm gradient-border">Python</span>
+										<span class="px-3 py-1 text-sm gradient-border">Flask</span>
+										<span class="px-3 py-1 text-sm gradient-border">MySQL</span>
+										<span class="px-3 py-1 text-sm gradient-border">Cloudflare</span>
+									</div>
+								</div>
+							</div>
+							<a href="https://proxyit.today/" class="text-accent hover:text-blue-400 transition-colors flex items-center gap-2" target="_blank">
+								View Project
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+								</svg>
+							</a>
+						</div>
+
+						<div class="gradient-border p-8 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 id="hostquick" class="text-2xl font-bold">HostQuick</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-gray-400">Inactive</span>
+							</div>
+							<p class="text-gray-300 mb-6 leading-relaxed">
+								VPS hosting service with custom control panel integration. Offered affordable hosting with flexible resource allocation, allowing users to customize CPU cores and RAM based on their needs. Featured automated VPS creation and management system.
+							</p>
+							<div class="space-y-4 mb-6">
+								<div>
+									<h4 class="text-sm uppercase text-gray-500 mb-2">Tech Stack</h4>
+									<div class="flex flex-wrap gap-2">
+										<span class="px-3 py-1 text-sm gradient-border">Python</span>
+										<span class="px-3 py-1 text-sm gradient-border">Flask</span>
+										<span class="px-3 py-1 text-sm gradient-border">MySQL</span>
+										<span class="px-3 py-1 text-sm gradient-border">Cockpit</span>
+										<span class="px-3 py-1 text-sm gradient-border">Redis</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="gradient-border p-8 transform hover:scale-[1.02] transition-all">
+							<div class="flex justify-between items-start mb-4">
+								<h3 id="mystudypal" class="text-2xl font-bold">MyStudyPal</h3>
+								<span class="px-3 py-1 text-sm gradient-border text-blue-400">Upcoming</span>
+							</div>
+							<p class="text-gray-300 mb-6 leading-relaxed">
+								Comprehensive student management platform featuring AI-powered syllabus analysis, automated event creation, and collaborative learning tools. Integrates with LlmEndpoint's AI capabilities for enhanced study planning and organization.
+							</p>
+							<div class="space-y-4">
+								<div>
+									<h4 class="text-sm uppercase text-gray-500 mb-2">Planned Features</h4>
+									<ul class="list-disc ml-4 text-gray-300 space-y-1">
+										<li>AI-powered syllabus analysis</li>
+										<li>Automated academic calendar</li>
+										<li>Todo list management</li>
+										<li>Collaborative study tools</li>
+										<li>Student Q&A platform</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-divider"></div>
+			</section>
+
+			<section id="contact" class="py-20 px-4">
+				<div class="container mx-auto max-w-4xl">
+					<h2 id="contact" class="text-5xl font-bold mb-12 bg-gradient-to-r from-accent to-blue-400 text-transparent bg-clip-text">Get In Touch</h2>
+					<div class="gradient-border p-8">
+						<div class="flex flex-col space-y-6">
+							<a href="mailto:vibheksoni@engineer.com" class="flex items-center gap-3 text-xl hover:text-accent transition-colors">
+								<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+								</svg>
+								vibheksoni@engineer.com
+							</a>
+							<div class="flex space-x-4">
+								<a href="https://github.com/vibheksoni" class="text-gray-300 hover:text-accent flex items-center" target="_blank">
+									<img src="https://img.icons8.com/ios/50/ffffff/github.png" alt="GitHub Icon" class="h-5 w-5 mr-1">
+									GitHub
+								</a>
+								<a href="https://x.com/ItsVibhek" class="text-gray-300 hover:text-accent flex items-center" target="_blank">
+									<img src="https://img.icons8.com/ios/50/ffffff/twitter.png" alt="Twitter Icon" class="h-5 w-5 mr-1">
+									Twitter
+								</a>
+								<a href="https://www.instagram.com/nyc.vibhek/" class="text-gray-300 hover:text-accent flex items-center" target="_blank">
+									<img src="https://img.icons8.com/ios/50/ffffff/instagram.png" alt="Instagram Icon" class="h-5 w-5 mr-1">
+									Instagram
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script>
+			const menuBtn = document.getElementById('menuBtn');
+			const mobileMenu = document.querySelector('.mobile-menu');
+
+			menuBtn.addEventListener('click', () => {
+				mobileMenu.classList.toggle('hidden');
+			});
+
+			const sections = document.querySelectorAll('section');
+			const navLinks = document.querySelectorAll('.nav-link');
+
+			function updateActiveLink() {
+				let current = '';
+				const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.offsetHeight;
+
+					if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
+						current = section.getAttribute('id');
+					}
+				});
+
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href').substring(1) === current) {
+						link.classList.add('active');
+					}
+				});
+			}
+
+			window.addEventListener('scroll', updateActiveLink);
+			window.addEventListener('load', updateActiveLink);
+			updateActiveLink();
+		</script>
+	</body>
+</html>
