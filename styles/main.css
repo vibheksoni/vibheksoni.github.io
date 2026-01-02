@@ -461,9 +461,14 @@ a {
     box-shadow: var(--card-shadow-hover);
 }
 
-.contact-box i {
+.contact-box i,
+.contact-box svg {
     color: var(--accent-color);
     font-size: 1.1rem;
+}
+
+.contact-box svg {
+    fill: var(--accent-color);
 }
 
 .fixed-footer {
