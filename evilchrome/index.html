@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvilChrome: Advanced Chrome Security Research PoC | InsecureMind.xyz</title>
+    <link rel="stylesheet" href="../../static/dist/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+</head>
+<body class="bg-black text-green-500 font-mono flex flex-col min-h-screen">
+    <div id="particles-js-bg" class="fixed inset-0 pointer-events-none z-[-1]"></div>
+    
+    <nav class="border-b border-zinc-800 backdrop-blur-sm bg-black/50 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="../../index.html" class="text-xl font-bold hover:text-green-400 transition-colors">InsecureMind.xyz</a>
+                <div>
+                    <a href="../../index.html" class="px-3 py-2 hover:text-green-400 transition-colors">Home</a>
+                    <a href="../../posts.html" class="px-3 py-2 hover:text-green-400 transition-colors">Posts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="flex-grow relative">
+        
+    <section class="container mx-auto px-4 py-16">
+        <nav class="mb-8 flex items-center justify-between">
+            <a href="../../posts.html" class="flex items-center text-green-500 hover:text-green-400 transition-colors">
+                ← Back to Posts
+            </a>
+            <span class="px-3 py-1 bg-green-500/10 text-green-500 rounded text-sm">Vulnerabilities</span>
+        </nav>
+        <article class="max-w-4xl mx-auto">
+            <header class="mb-12">
+                <h1 class="text-4xl font-bold mb-6">EvilChrome: Advanced Chrome Security Research PoC</h1>
+                <p class="text-xl text-zinc-400 mb-8">A sophisticated Chrome browser manipulation framework demonstrating critical browser security vulnerabilities. This educational PoC explores potential attack vectors including undetectable Chrome instance manipulation, session hijacking, form data interception, and cookie theft techniques.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">chrome security</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">browser vulnerabilities</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">security research</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">poc</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">session hijacking</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">cookie theft</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">browser manipulation</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">selenium</span>
+                    
+                        <span class="px-3 py-1 bg-zinc-900 text-zinc-400 rounded-full text-sm">python</span>
+                    
+                </div>
+                <div class="flex items-center gap-3 text-sm text-zinc-500">
+                    <time>January 24, 2024</time>
+                    <span>·</span>
+                    <span>January 24, 2024</span>
+                </div>
+            </header>
+            <div class="prose prose-invert prose-green max-w-none">
+                <h1>EvilChrome: Advanced Chrome Security Research PoC</h1>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3.8%2B-blue" /><br />
+<img alt="Selenium" src="https://img.shields.io/badge/Selenium-4.x-green" /><br />
+<img alt="Status" src="https://img.shields.io/badge/Status-Research-red" /></p>
+<h2>Introduction</h2>
+<p>In this research post, I explore a critical security concept that demonstrates how Chrome browser instances can be manipulated for malicious purposes. This proof-of-concept research highlights the potential risks of browser binary replacement attacks and their implications for user privacy and security.</p>
+<h2>The Concept</h2>
+<p>The core idea behind EvilChrome is surprisingly straightforward yet concerning: What if an attacker could replace a target's Chrome browser binary with a malicious version that launches a Chrome instance controlled by an external program? This would effectively give an attacker complete control over the user's browsing activity while maintaining the appearance of a normal browser.</p>
+<h2>Technical Implementation</h2>
+<p>The PoC leverages several key components to achieve its goals:</p>
+<ol>
+<li><strong>Binary Replacement</strong></li>
+<li>Replaces the legitimate Chrome binary with a modified version</li>
+<li>Maintains all original Chrome functionality</li>
+<li>
+<p>Seamlessly integrates with the system</p>
+</li>
+<li>
+<p><strong>Profile Loading</strong></p>
+</li>
+<li>Loads the user's existing Chrome profile</li>
+<li>Maintains access to saved passwords, bookmarks, and history</li>
+<li>
+<p>Creates a completely authentic browsing environment</p>
+</li>
+<li>
+<p><strong>Browser Control</strong></p>
+</li>
+<li>Utilizes Selenium for browser automation</li>
+<li>Implements real-time monitoring of all browser activities</li>
+<li>
+<p>Captures form submissions, cookies, and session data</p>
+</li>
+<li>
+<p><strong>Stealth Operations</strong></p>
+</li>
+<li>Integrates the excellent undetected-chromedriver library</li>
+<li>Bypasses common browser automation detection systems</li>
+<li>Appears as a legitimate browser instance</li>
+</ol>
+<h2>Security Implications</h2>
+<p>This research exposes several critical security concerns:</p>
+<ol>
+<li><strong>Profile Access</strong></li>
+<li>Complete access to saved credentials</li>
+<li>Access to authentication tokens and cookies</li>
+<li>
+<p>Ability to hijack existing sessions</p>
+</li>
+<li>
+<p><strong>Data Interception</strong></p>
+</li>
+<li>Real-time monitoring of form submissions</li>
+<li>Capture of sensitive input data</li>
+<li>
+<p>Interception of authentication flows</p>
+</li>
+<li>
+<p><strong>Session Control</strong></p>
+</li>
+<li>Ability to maintain persistent access</li>
+<li>Manipulation of active sessions</li>
+<li>Cross-origin request capabilities</li>
+</ol>
+<h2>Mitigation Strategies</h2>
+<p>To protect against such attacks, organizations and users should:</p>
+<ul>
+<li>Implement strict binary verification</li>
+<li>Use hardware security modules where possible</li>
+<li>Monitor for unauthorized binary modifications</li>
+<li>Implement application allowlisting</li>
+<li>Regular security audits of installed applications</li>
+</ul>
+<h2>Credits</h2>
+<p>Credits to the following python libraries used in this research:<br />
+- undetected-chromedriver: <a href="https://github.com/ultrafunkamsterdam/undetected-chromedriver">https://github.com/ultrafunkamsterdam/undetected-chromedriver</a></p>
+<h2>Legal Disclaimer</h2>
+<p>This research is published for educational purposes only. The concepts and techniques described here should only be used in authorized security research and testing environments. Any malicious use of these concepts is strictly prohibited and may be illegal in your jurisdiction.</p>
+<h2>About the Author</h2>
+<p><strong>Vibhek Soni</strong><br />
+- Security Researcher<br />
+- GitHub: <a href="https://github.com/vibheksoni">@vibheksoni</a></p>
+<h2>License</h2>
+<p>This research is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details. </p>
+            </div>
+            <footer class="mt-16 pt-8 border-t border-zinc-800">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://avatars.githubusercontent.com/u/102437829?v=4" alt="Vibhek Soni" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h3 class="font-bold">Vibhek Soni</h3>
+                            <p class="text-sm text-zinc-400">Security Researcher</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/VibhekSoni" target="_blank" class="text-zinc-400 hover:text-green-500 transition-colors">GitHub</a>
+                        <a href="https://www.instagram.com/nyc.vibhek/" target="_blank" class="text-zinc-400 hover:text-green-500 transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </section>
+
+    </main>
+    <footer class="border-t border-zinc-800 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-zinc-500">&copy; 2025 InsecureMind.xyz. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        if (document.getElementById('particles-js-bg')) {
+            particlesJS('particles-js-bg', {
+                particles: {
+                    number: { value: 30, density: { enable: true, value_area: 800 } },
+                    color: { value: '#22c55e' },
+                    shape: { type: 'circle' },
+                    opacity: { value: 0.2, random: true },
+                    size: { value: 2, random: true },
+                    line_linked: { enable: false },
+                    move: { enable: true, speed: 0.5, direction: 'none', random: true, straight: false, out_mode: 'out' }
+                },
+                interactivity: { detect_on: 'canvas', events: { onhover: { enable: false }, onclick: { enable: false } } }
+            });
+        }
+    </script>
+    
+</body>
+</html>

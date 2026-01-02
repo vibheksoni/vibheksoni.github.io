@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibhek Soni | Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="floating-nav">
+        <ul>
+            <li class="active" data-target="home">Home</li>
+            <li data-target="about">About</li>
+            <li data-target="projects">Projects</li>
+            <li data-target="skills">Skills</li>
+            <li data-target="contact">Contact</li>
+            <li><a href="blog.html" class="nav-link-external">Blog <i class="fas fa-external-link-alt"></i></a></li>
+        </ul>
+    </nav>
+
+    <main class="content-container">
+        <section id="home" class="page-section active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="role-text">Full-Stack Backend Developer & Security Engineer</span>
+                        <h1>Vibhek Soni</h1>
+                        <h2 class="typing-text">Building secure, scalable systems.</h2>
+                        <p>
+                            I specialize in backend architecture, security research, and automating complex workflows. 
+                        </p>
+                        <div class="cta-group">
+                            <button class="cta-button nav-trigger" data-target="projects">View Projects</button>
+                            <button class="cta-button outline nav-trigger" data-target="contact">Contact Me</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="pfp.webp" alt="Vibhek Soni Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-content">
+                    <p>
+                        I started coding at age 14 and haven't stopped since. My passion lies at the intersection of <strong>software engineering</strong> and <strong>cybersecurity</strong>. 
+                        I don't just build applications; I break them to make them stronger. 
+                    </p>
+                    <p>
+                        My expertise covers reverse engineering, anti-bot bypass techniques, and high-performance backend systems. 
+                        I actively research vulnerabilities and publish findings at <a href="https://insecuremind.xyz" target="_blank" class="text-link">InsecureMind.xyz</a>.
+                        With over 9 years of experience, I've scaled APIs to handle 50k+ monthly requests and mitigated large-scale DDoS attacks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card" onclick="window.open('https://devhivestudios.com/', '_blank')">
+                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                        <div class="project-header">
+                            <i class="fas fa-users-cog project-icon"></i>
+                            <h3>DevHive Studios</h3>
+                        </div>
+                        <p class="project-desc">
+                            A freelance development agency platform connecting clients with developers for custom software projects.
+                            Features client onboarding, real-time project chat, crypto payments, and automated developer payouts.
+                        </p>
+                        <ul class="project-stats">
+                            <li><i class="fas fa-check"></i> Discord/Telegram Bot Integration</li>
+                            <li><i class="fas fa-check"></i> Crypto Payment Processing</li>
+                            <li><i class="fas fa-check"></i> Real-time Chat & File Sharing</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Socket.IO</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/VerbalCodeAi', '_blank')">
+                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                        <div class="project-header">
+                            <i class="fas fa-terminal project-icon"></i>
+                            <h3>VerbalCodeAI</h3>
+                        </div>
+                        <p class="project-desc">
+                            Terminal-first AI-powered developer assistant for exploring large codebases through natural language.
+                            Combines semantic search, code analysis, and agent-driven tooling with local/cloud LLM support.
+                        </p>
+                        <ul class="project-stats">
+                            <li><i class="fas fa-check"></i> Local & Cloud LLM Support</li>
+                            <li><i class="fas fa-check"></i> Semantic Code Search</li>
+                            <li><i class="fas fa-check"></i> MCP Integration</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tree-sitter</span>
+                            <span class="tag">Ollama</span>
+                            <span class="tag">FastAPI</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/EvilChrome', '_blank')">
+                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                        <div class="project-header">
+                            <i class="fas fa-user-secret project-icon"></i>
+                            <h3>EvilChrome</h3>
+                        </div>
+                        <p class="project-desc">
+                            Browser security research PoC exploring potential weaknesses in Chrome's runtime and profile architecture.
+                            Educational framework for studying browser attack surfaces and defensive techniques.
+                        </p>
+                        <ul class="project-stats">
+                            <li><i class="fas fa-check"></i> Session State Analysis</li>
+                            <li><i class="fas fa-check"></i> Stealth Automation Research</li>
+                            <li><i class="fas fa-check"></i> Cookie Lifecycle Tracking</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Security Research</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-server project-icon"></i>
+                            <h3>LlmEndpoint</h3>
+                        </div>
+                        <p class="project-desc">
+                            A cost-effective AI API platform providing access to open-source models like Llama through Ollama.
+                        </p>
+                        <ul class="project-stats">
+                            <li><i class="fas fa-check"></i> Scalable Architecture</li>
+                            <li><i class="fas fa-check"></i> Dockerized Deployment</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/stock-assist', '_blank')">
+                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                        <div class="project-header">
+                            <i class="fas fa-chart-line project-icon"></i>
+                            <h3>Stock Assist</h3>
+                        </div>
+                        <p class="project-desc">
+                            SaaS platform offering AI-powered stock analysis and real-time market data.
+                            Features a Progressive Web App (PWA) for seamless mobile experience.
+                        </p>
+                        <ul class="project-stats">
+                            <li><i class="fas fa-check"></i> Real-time Data Analysis</li>
+                            <li><i class="fas fa-check"></i> AI Integration</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Google AI</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/rust-serve', '_blank')">
+                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                        <div class="project-header">
+                            <i class="fas fa-network-wired project-icon"></i>
+                            <h3>RustServe</h3>
+                        </div>
+                        <p class="project-desc">
+                            Lightweight web server built from scratch in Rust, implementing HTTP fundamentals from first principles.
+                            Features multi-threaded concurrency and manual request/response handling.
+                        </p>
+                        <ul class="project-stats">
+                            <li><i class="fas fa-check"></i> Zero-Fero Dependencies</li>
+                            <li><i class="fas fa-check"></i> Manual HTTP Parsing</li>
+                            <li><i class="fas fa-check"></i> Custom Routing System</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Rust</span>
+                            <span class="tag">TCP</span>
+                            <span class="tag">Multi-threading</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-shield-alt project-icon"></i>
+                            <h3>Security Research</h3>
+                        </div>
+                        <p class="project-desc">
+                            A collection of tools and scripts for reverse engineering APIs and bypassing protections.
+                        </p>
+                        <ul class="project-stats">
+                            <li><i class="fas fa-check"></i> Anti-virus Evasion</li>
+                            <li><i class="fas fa-check"></i> Web Scraping</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Rust</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Technical <span>Arsenal</span></h2>
+                <div class="info-grid">
+                    <div class="card">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Rust</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                        <div class="tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-tools"></i> Tools & Ops</h3>
+                        <div class="tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Wireshark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2 class="section-title">Let's <span>Connect</span></h2>
+                <div class="contact-container">
+                    <p>Interested in my work or need a secure backend solution? I'm open to freelance opportunities and collaborations.</p>
+                    <br>
+                    <div class="contact-links-wrapper">
+                        <a href="mailto:vibheksoni@engineer.com" class="contact-box">
+                            <i class="fas fa-envelope"></i>
+                            <span>vibheksoni@engineer.com</span>
+                        </a>
+                        <a href="https://github.com/vibheksoni" target="_blank" class="contact-box">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/vibheksoni</span>
+                        </a>
+                        <a href="https://x.com/ImVibhek" target="_blank" class="contact-box">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>x.com/ImVibhek</span>
+                        </a>
+                        <a href="https://www.instagram.com/nyc.vibhek/" target="_blank" class="contact-box">
+                            <i class="fab fa-instagram"></i>
+                            <span>instagram.com/nyc.vibhek</span>
+                        </a>
+                        <div class="contact-box">
+                            <i class="fab fa-discord"></i>
+                            <span>1codec</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="fixed-footer">
+        &copy; 2025 <span>Vibhek Soni</span>. Built with code and coffee.
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
