@@ -15,7 +15,7 @@
             <li data-target="projects">Projects</li>
             <li data-target="skills">Skills</li>
             <li data-target="contact">Contact</li>
-            <li><a href="blog.html" class="nav-link-external">Blog <i class="fas fa-external-link-alt"></i></a></li>
+            <li><a href="https://opendoors.wtf/" target="_blank" class="nav-link-external">Blog <i class="fas fa-external-link-alt"></i></a></li>
         </ul>
     </nav>
 
@@ -64,7 +64,13 @@
         <section id="projects" class="page-section">
             <div class="container">
                 <h2 class="section-title">Featured <span>Projects</span></h2>
-                <div class="projects-grid">
+
+                <div class="projects-carousel">
+                    <button class="carousel-arrow carousel-prev" aria-label="Previous projects">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="projects-track">
                     <div class="project-card" onclick="window.open('https://devhivestudios.com/', '_blank')">
                         <i class="fas fa-external-link-alt external-link-icon"></i>
                         <div class="project-header">
@@ -215,7 +221,14 @@
                             <span class="tag">Python</span>
                         </div>
                     </div>
+                    </div>
+
+                    <button class="carousel-arrow carousel-next" aria-label="Next projects">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
+
+                <div class="carousel-dots"></div>
             </div>
         </section>
 
@@ -259,10 +272,9 @@
             <div class="container">
                 <h2 class="section-title">Let's <span>Connect</span></h2>
                 <div class="contact-container">
-                    <p>Interested in my work or need a secure backend solution? I'm open to freelance opportunities and collaborations.</p>
-                    <p style="margin-top: 15px; font-size: 0.95rem; color: #aaa;">Like my projects? Consider supporting my work:</p>
-                    <br>
-                    <div class="contact-links-wrapper">
+                    <p class="contact-intro">Open to freelance work, collaborations, and interesting projects.</p>
+
+                    <div class="contact-grid">
                         <a href="mailto:vibheksoni@engineer.com" class="contact-box">
                             <i class="fas fa-envelope"></i>
                             <span>vibheksoni@engineer.com</span>
@@ -277,26 +289,35 @@
                             </svg>
                             <span>x.com/ImVibhek</span>
                         </a>
+                        <a href="https://www.linkedin.com/in/vibhek-soni-11126939b/" target="_blank" class="contact-box">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.youtube.com/@vibheksoni" target="_blank" class="contact-box">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
                         <a href="https://www.instagram.com/nyc.vibhek/" target="_blank" class="contact-box">
                             <i class="fab fa-instagram"></i>
-                            <span>instagram.com/nyc.vibhek</span>
-                        </a>
-                        <a href="https://buymeacoffee.com/vibheksoni" target="_blank" class="contact-box" style="background: linear-gradient(135deg, #FFDD00 0%, #FF9500 100%); border: none;">
-                            <i class="fas fa-mug-hot" style="color: #000;"></i>
-                            <span style="color: #000; font-weight: 600;">Buy Me a Coffee</span>
+                            <span>nyc.vibhek</span>
                         </a>
                         <div class="contact-box">
                             <i class="fab fa-discord"></i>
                             <span>1codec</span>
                         </div>
                     </div>
+
+                    <a href="https://buymeacoffee.com/vibheksoni" target="_blank" class="coffee-btn">
+                        <i class="fas fa-coffee"></i>
+                        <span>Buy me a coffee</span>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
     <div class="fixed-footer">
-        &copy; 2025 <span>Vibhek Soni</span>. Built with code and coffee.
+        &copy; 2026 <span>Vibhek Soni</span>. Built with code and coffee.
     </div>
 
     <div class="scroll-indicator">
