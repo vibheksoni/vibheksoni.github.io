@@ -3,23 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibhek Soni | Portfolio</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Vibhek Soni | Full-Stack Backend Developer & Security Engineer</title>
+    <meta name="title" content="Vibhek Soni | Full-Stack Backend Developer & Security Engineer">
+    <meta name="description" content="Full-stack backend developer and security engineer specializing in secure, scalable systems. Building AI-powered tools, backend architecture, and security research projects.">
+    <meta name="keywords" content="Vibhek Soni, Backend Developer, Security Engineer, Full-Stack Developer, Python, Flask, Security Research, DevHive Studios">
+    <meta name="author" content="Vibhek Soni">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://vibheksoni.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <meta name="theme-color" content="#050505">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vibheksoni.com/">
+    <meta property="og:title" content="Vibhek Soni | Full-Stack Backend Developer & Security Engineer">
+    <meta property="og:description" content="Full-stack backend developer and security engineer specializing in secure, scalable systems. Building AI-powered tools, backend architecture, and security research projects.">
+    <meta property="og:image" content="https://vibheksoni.com/icons/android-chrome-512x512.png">
+    <meta property="og:site_name" content="Vibhek Soni">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://vibheksoni.com/">
+    <meta name="twitter:title" content="Vibhek Soni | Full-Stack Backend Developer & Security Engineer">
+    <meta name="twitter:description" content="Full-stack backend developer and security engineer specializing in secure, scalable systems.">
+    <meta name="twitter:image" content="https://vibheksoni.com/icons/android-chrome-512x512.png">
+    <meta name="twitter:creator" content="@ImVibhek">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vibhek Soni",
+        "url": "https://vibheksoni.com",
+        "image": "https://vibheksoni.com/pfp.webp",
+        "jobTitle": "Full-Stack Backend Developer & Security Engineer",
+        "description": "Full-stack backend developer and security engineer specializing in secure, scalable systems.",
+        "sameAs": [
+            "https://github.com/vibheksoni",
+            "https://x.com/ImVibhek",
+            "https://www.linkedin.com/in/vibhek-soni-11126939b/",
+            "https://www.youtube.com/@vibheksoni",
+            "https://www.instagram.com/nyc.vibhek/"
+        ],
+        "knowsAbout": ["Backend Development", "Security Engineering", "Python", "Flask", "FastAPI", "Rust", "Security Research"]
+    }
+    </script>
 </head>
 <body>
-    <nav class="floating-nav">
+    <nav class="floating-nav" role="navigation" aria-label="Main navigation">
         <ul>
-            <li class="active" data-target="home">Home</li>
-            <li data-target="about">About</li>
-            <li data-target="projects">Projects</li>
-            <li data-target="skills">Skills</li>
-            <li data-target="contact">Contact</li>
-            <li><a href="https://opendoors.wtf/" target="_blank" class="nav-link-external">Blog <i class="fas fa-external-link-alt"></i></a></li>
+            <li class="active" data-target="home" role="button" tabindex="0" aria-current="page">Home</li>
+            <li data-target="about" role="button" tabindex="0">About</li>
+            <li data-target="projects" role="button" tabindex="0">Projects</li>
+            <li data-target="skills" role="button" tabindex="0">Skills</li>
+            <li data-target="contact" role="button" tabindex="0">Contact</li>
+            <li><a href="https://opendoors.wtf/" target="_blank" rel="noopener noreferrer" class="nav-link-external" aria-label="Blog (opens in new tab)">Blog <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
         </ul>
     </nav>
 
-    <main class="content-container">
+    <main class="content-container" role="main">
         <section id="home" class="page-section active">
             <div class="container">
                 <div class="hero-content">
@@ -31,8 +93,8 @@
                             I specialize in backend architecture, security research, and automating complex workflows. 
                         </p>
                         <div class="cta-group">
-                            <button class="cta-button nav-trigger" data-target="projects">View Projects</button>
-                            <button class="cta-button outline nav-trigger" data-target="contact">Contact Me</button>
+                            <button class="cta-button nav-trigger" data-target="projects" aria-label="View my projects">View Projects</button>
+                            <button class="cta-button outline nav-trigger" data-target="contact" aria-label="Get in touch with me">Contact Me</button>
                         </div>
                     </div>
                     <div class="hero-image">
@@ -71,10 +133,10 @@
                     </button>
 
                     <div class="projects-track">
-                    <div class="project-card" onclick="window.open('https://devhivestudios.com/', '_blank')">
-                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                    <div class="project-card" onclick="window.open('https://devhivestudios.com/', '_blank')" role="button" tabindex="0" aria-label="DevHive Studios - Opens in new tab">
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
                         <div class="project-header">
-                            <i class="fas fa-users-cog project-icon"></i>
+                            <i class="fas fa-users-cog project-icon" aria-hidden="true"></i>
                             <h3>DevHive Studios</h3>
                         </div>
                         <p class="project-desc">
@@ -94,10 +156,10 @@
                         </div>
                     </div>
 
-                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/VerbalCodeAi', '_blank')">
-                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/VerbalCodeAi', '_blank')" role="button" tabindex="0" aria-label="VerbalCodeAI - Opens in new tab">
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
                         <div class="project-header">
-                            <i class="fas fa-terminal project-icon"></i>
+                            <i class="fas fa-terminal project-icon" aria-hidden="true"></i>
                             <h3>VerbalCodeAI</h3>
                         </div>
                         <p class="project-desc">
@@ -117,10 +179,10 @@
                         </div>
                     </div>
 
-                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/EvilChrome', '_blank')">
-                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/EvilChrome', '_blank')" role="button" tabindex="0" aria-label="EvilChrome - Opens in new tab">
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
                         <div class="project-header">
-                            <i class="fas fa-user-secret project-icon"></i>
+                            <i class="fas fa-user-secret project-icon" aria-hidden="true"></i>
                             <h3>EvilChrome</h3>
                         </div>
                         <p class="project-desc">
@@ -139,9 +201,9 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" role="article">
                         <div class="project-header">
-                            <i class="fas fa-server project-icon"></i>
+                            <i class="fas fa-server project-icon" aria-hidden="true"></i>
                             <h3>LlmEndpoint</h3>
                         </div>
                         <p class="project-desc">
@@ -159,10 +221,10 @@
                         </div>
                     </div>
 
-                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/stock-assist', '_blank')">
-                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/stock-assist', '_blank')" role="button" tabindex="0" aria-label="Stock Assist - Opens in new tab">
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
                         <div class="project-header">
-                            <i class="fas fa-chart-line project-icon"></i>
+                            <i class="fas fa-chart-line project-icon" aria-hidden="true"></i>
                             <h3>Stock Assist</h3>
                         </div>
                         <p class="project-desc">
@@ -181,10 +243,10 @@
                         </div>
                     </div>
 
-                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/rust-serve', '_blank')">
-                        <i class="fas fa-external-link-alt external-link-icon"></i>
+                    <div class="project-card" onclick="window.open('https://github.com/vibheksoni/rust-serve', '_blank')" role="button" tabindex="0" aria-label="RustServe - Opens in new tab">
+                        <i class="fas fa-external-link-alt external-link-icon" aria-hidden="true"></i>
                         <div class="project-header">
-                            <i class="fas fa-network-wired project-icon"></i>
+                            <i class="fas fa-network-wired project-icon" aria-hidden="true"></i>
                             <h3>RustServe</h3>
                         </div>
                         <p class="project-desc">
@@ -203,9 +265,9 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <div class="project-card" role="article">
                         <div class="project-header">
-                            <i class="fas fa-shield-alt project-icon"></i>
+                            <i class="fas fa-shield-alt project-icon" aria-hidden="true"></i>
                             <h3>Security Research</h3>
                         </div>
                         <p class="project-desc">
@@ -237,7 +299,7 @@
                 <h2 class="section-title">Technical <span>Arsenal</span></h2>
                 <div class="info-grid">
                     <div class="card">
-                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <h3><i class="fas fa-code" aria-hidden="true"></i> Languages</h3>
                         <div class="tags">
                             <span class="tag">Python</span>
                             <span class="tag">C</span>
@@ -246,7 +308,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                        <h3><i class="fas fa-layer-group" aria-hidden="true"></i> Frameworks</h3>
                         <div class="tags">
                             <span class="tag">Flask</span>
                             <span class="tag">FastAPI</span>
@@ -255,7 +317,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <h3><i class="fas fa-tools"></i> Tools & Ops</h3>
+                        <h3><i class="fas fa-tools" aria-hidden="true"></i> Tools & Ops</h3>
                         <div class="tags">
                             <span class="tag">Docker</span>
                             <span class="tag">Redis</span>
@@ -276,39 +338,39 @@
 
                     <div class="contact-grid">
                         <a href="mailto:vibheksoni@engineer.com" class="contact-box">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <span>vibheksoni@engineer.com</span>
                         </a>
-                        <a href="https://github.com/vibheksoni" target="_blank" class="contact-box">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/vibheksoni" target="_blank" rel="noopener noreferrer" class="contact-box">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                             <span>github.com/vibheksoni</span>
                         </a>
-                        <a href="https://x.com/ImVibhek" target="_blank" class="contact-box">
-                            <svg style="width: 1.1rem; height: 1.1rem;" viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://x.com/ImVibhek" target="_blank" rel="noopener noreferrer" class="contact-box">
+                            <svg style="width: 1.1rem; height: 1.1rem;" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                             </svg>
                             <span>x.com/ImVibhek</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/vibhek-soni-11126939b/" target="_blank" class="contact-box">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/vibhek-soni-11126939b/" target="_blank" rel="noopener noreferrer" class="contact-box">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://www.youtube.com/@vibheksoni" target="_blank" class="contact-box">
-                            <i class="fab fa-youtube"></i>
+                        <a href="https://www.youtube.com/@vibheksoni" target="_blank" rel="noopener noreferrer" class="contact-box">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
                             <span>YouTube</span>
                         </a>
-                        <a href="https://www.instagram.com/nyc.vibhek/" target="_blank" class="contact-box">
-                            <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/nyc.vibhek/" target="_blank" rel="noopener noreferrer" class="contact-box">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
                             <span>nyc.vibhek</span>
                         </a>
                         <div class="contact-box">
-                            <i class="fab fa-discord"></i>
+                            <i class="fab fa-discord" aria-hidden="true"></i>
                             <span>1codec</span>
                         </div>
                     </div>
 
-                    <a href="https://buymeacoffee.com/vibheksoni" target="_blank" class="coffee-btn">
-                        <i class="fas fa-coffee"></i>
+                    <a href="https://buymeacoffee.com/vibheksoni" target="_blank" rel="noopener noreferrer" class="coffee-btn" aria-label="Buy me a coffee (opens in new tab)">
+                        <i class="fas fa-coffee" aria-hidden="true"></i>
                         <span>Buy me a coffee</span>
                     </a>
                 </div>
@@ -320,7 +382,7 @@
         &copy; 2026 <span>Vibhek Soni</span>. Built with code and coffee.
     </div>
 
-    <div class="scroll-indicator">
+    <div class="scroll-indicator" aria-hidden="true">
         <div class="mouse">
             <div class="wheel"></div>
         </div>

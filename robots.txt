@@ -1,0 +1,7 @@
+# robots.txt for vibheksoni.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vibheksoni.com/sitemap.xml
