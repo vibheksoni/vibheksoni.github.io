@@ -319,6 +319,34 @@ a {
     margin-bottom: 0;
 }
 
+.focus-list {
+    list-style: none;
+    margin: 4px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.focus-list li {
+    font-size: 1rem;
+    color: #d7d7d7;
+    line-height: 1.55;
+    padding-left: 18px;
+    position: relative;
+}
+
+.focus-list li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-glow);
+    position: absolute;
+    left: 0;
+    top: 0.52em;
+}
+
 .text-link {
     color: var(--accent-color);
     text-decoration: none;
@@ -909,6 +937,22 @@ a {
 
     .about-content p {
         font-size: 1rem;
+    }
+
+    .focus-list {
+        gap: 8px;
+    }
+
+    .focus-list li {
+        font-size: 0.9rem;
+        line-height: 1.45;
+        padding-left: 15px;
+    }
+
+    .focus-list li::before {
+        width: 6px;
+        height: 6px;
+        top: 0.5em;
     }
 
     .contact-box {
