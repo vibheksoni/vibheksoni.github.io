@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://vibheksoni.com/</loc>
-        <lastmod>2026-01-23</lastmod>
+        <lastmod>2026-06-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://vibheksoni.com/vibhek-soni-profile.jpg</image:loc>
+            <image:title>Vibhek Soni profile image</image:title>
+            <image:caption>Vibhek Soni, New York backend systems builder focused on AI infrastructure and security research.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://vibheksoni.com/vibhek-soni-backend-ai-infrastructure-security-research.png</image:loc>
+            <image:title>Vibhek Soni backend systems, AI infrastructure, and security research</image:title>
+            <image:caption>Social preview image for Vibhek Soni's portfolio and public identity site.</image:caption>
+        </image:image>
     </url>
 </urlset>

@@ -36,3 +36,6 @@ build/
 
 # Old files
 old/
+.*/
+My*.txt
+.*.json

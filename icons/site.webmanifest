@@ -1,11 +1,11 @@
 {
-    "name": "Vibhek Soni | Portfolio",
+    "name": "Vibhek Soni | Backend Systems, AI Infrastructure, Security Research",
     "short_name": "Vibhek Soni",
-    "description": "Full-stack backend developer and security engineer portfolio",
+    "description": "Portfolio for Vibhek Soni, a New York backend systems builder focused on AI infrastructure, security research, browser automation, protocol analysis, MCP tooling, Python, Rust, Go, and FreeTheAI.",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#050505",
-    "theme_color": "#00ff9d",
+    "background_color": "#eeeeee",
+    "theme_color": "#000000",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png",
