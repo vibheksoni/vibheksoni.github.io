@@ -31,8 +31,8 @@ body {
     background: var(--paper);
     color: var(--ink);
     font-family: var(--font-sans);
-    font-size: 15.5px;
-    line-height: 1.52;
+    font-size: 16px;
+    line-height: 1.55;
     overflow-x: hidden;
 }
 
@@ -57,6 +57,21 @@ a:hover {
 a:focus-visible {
     outline: 2px solid var(--link);
     outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 10;
+    padding: 6px 9px;
+    color: var(--ink);
+    background: var(--highlight);
+    transform: translateY(-140%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
 }
 
 .masthead,
@@ -183,6 +198,7 @@ main {
 
 section {
     margin: clamp(28px, 3.2vw, 40px) 0 0;
+    scroll-margin-top: 24px;
 }
 
 h2 {
@@ -190,9 +206,10 @@ h2 {
     margin-bottom: 10px;
     padding-bottom: 7px;
     border-bottom: 1px solid var(--line);
-    font-size: 1rem;
+    font-size: 1.04rem;
     line-height: 1.25;
     letter-spacing: 0.01em;
+    text-wrap: balance;
 }
 
 .proof-block {
@@ -200,10 +217,9 @@ h2 {
 }
 
 .intro-text p {
-    max-width: 90ch;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: var(--ink);
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .intro-text p:last-child {
@@ -263,6 +279,7 @@ h2 {
     margin-bottom: 3px;
     font-size: 0.94rem;
     font-weight: 700;
+    text-wrap: balance;
 }
 
 .contact-links {
@@ -272,6 +289,9 @@ h2 {
 }
 
 .contact-links a {
+    min-height: 1.7em;
+    display: inline-flex;
+    align-items: center;
     white-space: nowrap;
 }
 
@@ -311,8 +331,8 @@ h2 {
 
 .list-note {
     color: var(--muted);
-    font-size: 0.93rem;
-    line-height: 1.48;
+    font-size: 0.94rem;
+    line-height: 1.52;
 }
 
 .proof-line {
@@ -379,7 +399,7 @@ h2 {
 .project-featured .metric-source {
     margin: 0;
     padding: 3px 0 0;
-    text-align: right;
+    text-align: left;
 }
 
 .project-featured .list-meta {
@@ -580,8 +600,8 @@ footer {
 @media (max-width: 680px) {
     body {
         padding: 12px 14px 18px;
-        font-size: 14.5px;
-        line-height: 1.5;
+        font-size: 15px;
+        line-height: 1.55;
     }
 
     .masthead {
@@ -654,8 +674,8 @@ footer {
 
     .intro-text p {
         margin-bottom: 12px;
-        font-size: 0.93rem;
-        line-height: 1.55;
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     .proof-heading {
@@ -737,8 +757,8 @@ footer {
     }
 
     .list-note {
-        font-size: 0.87rem;
-        line-height: 1.48;
+        font-size: 0.92rem;
+        line-height: 1.52;
     }
 
     .list-meta {
@@ -801,6 +821,32 @@ footer {
     footer {
         flex-direction: column;
         gap: 4px;
+    }
+}
+
+@media (min-width: 760px) {
+    .intro-text {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: clamp(28px, 4vw, 56px);
+        row-gap: 12px;
+    }
+
+    .intro-text p {
+        margin-bottom: 0;
+    }
+
+    .intro-text p:last-child {
+        grid-column: 1 / -1;
+        padding-top: 10px;
+        border-top: 1px solid var(--line-soft);
+        font-weight: 500;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
 
