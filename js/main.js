@@ -14,4 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
             history.pushState(null, '', id);
         });
     });
+
+    const copyButtons = document.querySelectorAll('[data-copy-value]');
+
+    copyButtons.forEach((button) => {
+        button.addEventListener('click', async () => {
+            const value = button.dataset.copyValue;
+            const status = button.parentElement?.querySelector('.copy-status');
+            if (!value) return;
+
+            try {
+                await navigator.clipboard.writeText(value);
+                if (status) status.textContent = 'copied';
+            } catch {
+                if (status) status.textContent = 'select email';
+            }
+
+            window.setTimeout(() => {
+                if (status) status.textContent = '';
+            }, 1800);
+        });
+    });
 });
