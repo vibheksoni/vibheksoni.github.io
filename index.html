@@ -131,7 +131,7 @@
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles/main.css?v=20260915-index-5" />
+        <link rel="stylesheet" href="styles/main.css?v=20261001-index-6" />
 
         <script type="application/ld+json">
             {
@@ -163,6 +163,10 @@
                         "workLocation": {
                             "@type": "Place",
                             "name": "New York, NY"
+                        },
+                        "alumniOf": {
+                            "@type": "CollegeOrUniversity",
+                            "name": "Western Governors University"
                         },
                         "knowsAbout": [
                             "Backend systems",
@@ -252,7 +256,7 @@
                         "url": "https://vibheksoni.com/",
                         "name": "Vibhek Soni",
                         "description": "Public profile for Vibhek Soni, focused on FreeTheAI, backend systems, AI infrastructure, MCP tooling, browser automation, protocol analysis, and security research.",
-                        "dateModified": "2026-09-15",
+                        "dateModified": "2026-10-01",
                         "primaryImageOfPage": {
                             "@type": "ImageObject",
                             "url": "https://vibheksoni.com/vibhek-soni-profile.jpg",
@@ -293,6 +297,10 @@
                     New York builder working on FreeTheAI, browser automation,
                     protocol analysis, and developer tooling.
                 </p>
+                <p class="site-status">
+                    Open to backend, AI infrastructure, and security roles
+                    &middot; available now
+                </p>
                 <p class="site-alias">
                     also known as <span>vibheksoni</span> /
                     <span>@ImVibhek</span>
@@ -318,32 +326,6 @@
         </header>
 
         <main id="content">
-            <section id="introduction" aria-labelledby="introduction-heading">
-                <h2 id="introduction-heading">Introduction</h2>
-                <div class="intro-text">
-                    <p>
-                        Hello, I am Vibhek Soni. I got into programming by
-                        trying to understand the tools people used to attack
-                        other players on PlayStation. That curiosity led me to
-                        source code, networking tools, and eventually writing
-                        my own code in Notepad before I knew how it worked.
-                    </p>
-                    <p>
-                        I learned on my first laptop: Python first, then C, C#,
-                        WinForms, sockets, TCP servers, epoll, ZMap, and
-                        client-server systems. Today I build backend and AI
-                        infrastructure, browser automation, and protocol tools
-                        that handle large streams of requests.
-                    </p>
-                    <p>
-                        The pattern is the same for everything I work on: take
-                        something I do not understand, break it apart, figure
-                        out how it works, and build something with what I
-                        learned.
-                    </p>
-                </div>
-            </section>
-
             <section id="projects" aria-labelledby="projects-heading">
                 <h2 id="projects-heading">Backend Projects</h2>
                 <ul class="list project-list">
@@ -369,21 +351,21 @@
                                 aria-label="FreeTheAI public metrics"
                             >
                                 <div class="metric">
-                                    <span class="metric-value">8.5k+</span>
-                                    <span class="metric-label"
-                                        >registered users</span
-                                    >
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-value">69B+</span>
+                                    <span class="metric-value">178B+</span>
                                     <span class="metric-label"
                                         >tokens served</span
                                     >
                                 </div>
                                 <div class="metric">
-                                    <span class="metric-value">1.56M+</span>
+                                    <span class="metric-value">6.4M+</span>
                                     <span class="metric-label"
-                                        >successful requests</span
+                                        >requests served</span
+                                    >
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">8.5k+</span>
+                                    <span class="metric-label"
+                                        >registered users</span
                                     >
                                 </div>
                                 <div class="metric">
@@ -394,8 +376,15 @@
                                 </div>
                             </div>
                             <p class="metric-source">
-                                Production checked Jun 18, 2026. Community size
-                                confirmed Sep 15, 2026.
+                                Tokens and requests from
+                                <a
+                                    href="https://freetheai.org/stats"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >public stats</a
+                                >, Oct 1, 2026 (all-time, includes the original
+                                free API). Users checked Jun 18, 2026. Discord
+                                size confirmed Sep 15, 2026.
                             </p>
                         </div>
                     </li>
@@ -414,7 +403,7 @@
                             debugging.</span
                         >
                         <span class="list-meta"
-                            >Python / MCP / CDP &middot; 2,067 stars / 287
+                            >Python / MCP / CDP &middot; 2,163 stars / 296
                             forks</span
                         >
                     </li>
@@ -491,6 +480,88 @@
                 </ul>
             </section>
 
+            <section id="experience" aria-labelledby="experience-heading">
+                <h2 id="experience-heading">Experience</h2>
+                <ul class="list compact-list experience-list">
+                    <li>
+                        <span class="list-title"
+                            >Independent Software Developer</span
+                        >
+                        <span class="list-meta"
+                            >Self-employed &middot; 2022 &ndash; present</span
+                        >
+                        <span class="list-note"
+                            >Open-source backend, AI infrastructure, and
+                            security tools, including stealth-browser-mcp,
+                            UniClaudeProxy, and Rust SDKs.</span
+                        >
+                    </li>
+                    <li>
+                        <span class="list-title">FreeTheAI</span>
+                        <span class="list-meta"
+                            >Builder and operator &middot; 2025 &ndash;
+                            present</span
+                        >
+                        <span class="list-note"
+                            >Go-backed OpenAI-compatible API gateway: auth,
+                            model routing, streaming, and usage
+                            tracking.</span
+                        >
+                    </li>
+                    <li>
+                        <span class="list-title"
+                            >Freelance Software Developer</span
+                        >
+                        <span class="list-meta"
+                            >Macan Studios &middot; Jun 2025 &ndash; Aug
+                            2026</span
+                        >
+                        <span class="list-note"
+                            >Discord bots, websites with custom backends, and
+                            Windows desktop software for private clients.</span
+                        >
+                    </li>
+                    <li>
+                        <span class="list-title">CyberShield</span>
+                        <span class="list-meta"
+                            >Co-developer &middot; 2023 &ndash; 2024</span
+                        >
+                        <span class="list-note"
+                            >Linux DDoS mitigation tool built with a friend,
+                            using iptables for traffic filtering. Versions
+                            written in C, V, and Python.</span
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <section id="introduction" aria-labelledby="introduction-heading">
+                <h2 id="introduction-heading">Introduction</h2>
+                <div class="intro-text">
+                    <p>
+                        Hello, I am Vibhek Soni. I got into programming by
+                        trying to understand how the network tools I kept
+                        running into on PlayStation actually worked. That
+                        curiosity led me to source code, networking tools, and
+                        eventually writing my own code in Notepad before I knew
+                        how it worked.
+                    </p>
+                    <p>
+                        I learned on my first laptop: Python first, then C, C#,
+                        WinForms, sockets, TCP servers, epoll, ZMap, and
+                        client-server systems. Today I build backend and AI
+                        infrastructure, browser automation, and protocol tools
+                        that handle large streams of requests.
+                    </p>
+                    <p>
+                        The pattern is the same for everything I work on: take
+                        something I do not understand, break it apart, figure
+                        out how it works, and build something with what I
+                        learned.
+                    </p>
+                </div>
+            </section>
+
             <section id="research" aria-labelledby="research-heading">
                 <h2 id="research-heading">Security Research</h2>
                 <ul class="list research-list">
@@ -553,8 +624,9 @@
                             ></span
                         >
                         <span class="list-note"
-                            >Windows hardware identifier research and defensive
-                            behavior analysis in Rust.</span
+                            >Rust research into Windows internals: hardware
+                            identifier spoofing over DMA (dma-spoofer) and an
+                            infostealer proof of concept (ferrox).</span
                         >
                     </li>
                 </ul>
@@ -602,7 +674,7 @@
                             >Western Governors University</span
                         >
                         <span class="list-note"
-                            >B.S. Computer Science &middot; Expected December
+                            >B.S. Computer Science &middot; Graduated Sep
                             2026</span
                         >
                     </li>
@@ -742,7 +814,7 @@
 
         <footer>
             <span>Vibhek Soni / New York</span>
-            <span>last updated: September 15, 2026</span>
+            <span>last updated: October 1, 2026</span>
         </footer>
         <script src="js/main.js"></script>
     </body>

@@ -140,6 +140,19 @@ h1 {
     text-align: left;
 }
 
+.site-status {
+    font-family: var(--font-mono);
+    display: inline-block;
+    margin: 8px 0 0;
+    padding: 3px 7px;
+    color: var(--ink);
+    background: var(--highlight);
+    border: 1px solid var(--line);
+    font-size: 0.74rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
 .site-alias {
     font-family: var(--font-mono);
     display: block;
@@ -333,6 +346,15 @@ h2 {
     color: var(--muted);
     font-size: 0.94rem;
     line-height: 1.52;
+}
+
+.experience-list .list-meta {
+    margin: 0 0 4px;
+}
+
+.metric-source a {
+    color: var(--link);
+    font-weight: 600;
 }
 
 .proof-line {
@@ -816,6 +838,25 @@ footer {
 
     .contact-links {
         gap: 7px 14px;
+    }
+
+    .contact-links a,
+    .email-row a {
+        min-height: 28px;
+    }
+
+    .list-title a {
+        display: inline-block;
+        padding: 3px 0;
+    }
+
+    .copy-button {
+        min-height: 28px;
+        padding: 0 6px;
+    }
+
+    .site-status {
+        font-size: 0.7rem;
     }
 
     footer {
