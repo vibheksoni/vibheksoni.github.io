@@ -22,7 +22,8 @@
             content="index, follow, max-image-preview:large"
         />
         <meta name="bingbot" content="index, follow, max-image-preview:large" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#0b0c0e" />
+        <meta name="color-scheme" content="dark" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="application-name" content="Vibhek Soni" />
         <meta name="apple-mobile-web-app-title" content="Vibhek Soni" />
@@ -128,10 +129,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles/main.css?v=20261001-index-6" />
+        <link rel="stylesheet" href="styles/main.css?v=20261005-dark-1" />
 
         <script type="application/ld+json">
             {
@@ -256,7 +257,7 @@
                         "url": "https://vibheksoni.com/",
                         "name": "Vibhek Soni",
                         "description": "Public profile for Vibhek Soni, focused on FreeTheAI, backend systems, AI infrastructure, MCP tooling, browser automation, protocol analysis, and security research.",
-                        "dateModified": "2026-10-01",
+                        "dateModified": "2026-10-05",
                         "primaryImageOfPage": {
                             "@type": "ImageObject",
                             "url": "https://vibheksoni.com/vibhek-soni-profile.jpg",
@@ -277,545 +278,297 @@
     </head>
     <body>
         <a class="skip-link" href="#content">Skip to content</a>
-        <header class="masthead">
-            <img
-                class="portrait"
-                src="vibhek-soni-profile.jpg"
-                width="640"
-                height="800"
-                alt="Vibhek Soni profile image"
-                decoding="async"
-                fetchpriority="high"
-            />
-            <div class="masthead-copy">
-                <h1>Vibhek Soni</h1>
-                <p class="site-tagline">
-                    Backend engineer &middot; AI infrastructure &amp; security
-                    research
-                </p>
-                <p class="site-note">
-                    New York builder working on FreeTheAI, browser automation,
-                    protocol analysis, and developer tooling.
-                </p>
-                <p class="site-status">
-                    Open to backend, AI infrastructure, and security roles
-                    &middot; available now
-                </p>
-                <p class="site-alias">
-                    also known as <span>vibheksoni</span> /
-                    <span>@ImVibhek</span>
-                </p>
-            </div>
-            <nav class="elsewhere-bar" aria-label="Primary links">
-                <a
-                    href="https://github.com/vibheksoni"
-                    target="_blank"
-                    rel="me noopener noreferrer"
-                    >github</a
-                >
-                <a
-                    href="https://freetheai.org/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >freetheai</a
-                >
-                <a href="mailto:vibheksoni@engineer.com"
-                    >vibheksoni@engineer.com</a
-                >
+
+        <header class="nav" data-nav>
+            <a class="nav-mark" href="#top" aria-label="Vibhek Soni, back to top">
+                <span class="nav-dot" aria-hidden="true"></span>vibheksoni
+            </a>
+            <nav class="nav-links" aria-label="Sections">
+                <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
+            <a class="nav-cta" href="mailto:vibheksoni@engineer.com">Email me</a>
         </header>
 
         <main id="content">
-            <section id="projects" aria-labelledby="projects-heading">
-                <h2 id="projects-heading">Backend Projects</h2>
-                <ul class="list project-list">
-                    <li class="project-featured">
-                        <div class="project-summary">
-                            <span class="list-title"
-                                ><a
-                                    href="https://freetheai.org/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >FreeTheAI</a
-                                ></span
-                            >
-                            <span class="list-note"
-                                >Go-backed OpenAI-compatible API gateway for
-                                auth, routing, streaming, tools, image
-                                endpoints, and usage tracking.</span
-                            >
-                        </div>
-                        <div class="project-proof">
-                            <div
-                                class="metric-grid"
-                                aria-label="FreeTheAI public metrics"
-                            >
-                                <div class="metric">
-                                    <span class="metric-value">178B+</span>
-                                    <span class="metric-label"
-                                        >tokens served</span
-                                    >
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-value">6.4M+</span>
-                                    <span class="metric-label"
-                                        >requests served</span
-                                    >
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-value">8.5k+</span>
-                                    <span class="metric-label"
-                                        >registered users</span
-                                    >
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-value">19k+</span>
-                                    <span class="metric-label"
-                                        >Discord members</span
-                                    >
-                                </div>
-                            </div>
-                            <p class="metric-source">
-                                Tokens and requests from
-                                <a
-                                    href="https://freetheai.org/stats"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >public stats</a
-                                >, Oct 1, 2026 (all-time, includes the original
-                                free API). Users checked Jun 18, 2026. Discord
-                                size confirmed Sep 15, 2026.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://github.com/vibheksoni/stealth-browser-mcp"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >stealth-browser-mcp</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >MCP browser automation using Chrome DevTools
-                            Protocol control, network hooks, and agent
-                            debugging.</span
-                        >
-                        <span class="list-meta"
-                            >Python / MCP / CDP &middot; 2,163 stars / 296
-                            forks</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://github.com/vibheksoni/UniClaudeProxy"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >UniClaudeProxy</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Claude Code-style proxy across Anthropic,
-                            OpenAI-compatible APIs, Gemini, and Ollama.</span
-                        >
-                        <span class="list-meta"
-                            >Python / FastAPI / LLM gateway</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://github.com/vibheksoni/VerbalCodeAi"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >VerbalCodeAI</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Terminal assistant for indexing local code and
-                            tracing where functions live or flows break.</span
-                        >
-                        <span class="list-meta">Python / embeddings / CLI</span>
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://github.com/vibheksoni/quickcontext"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >quickcontext</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Local code context engine combining Rust parsing,
-                            search services, Python indexing, and
-                            retrieval.</span
-                        >
-                        <span class="list-meta">Rust / Python / retrieval</span>
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://github.com/vibheksoni/t3router"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >t3router</a
-                            >
-                            /
-                            <a
-                                href="https://github.com/vibheksoni/axiomtrade-rs"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >axiomtrade-rs</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Rust SDK work for APIs, WebSockets, account flows,
-                            and automation.</span
-                        >
-                        <span class="list-meta">Rust / SDKs / WebSockets</span>
-                    </li>
-                </ul>
+            <section class="hero" id="top" aria-labelledby="hero-name">
+                <div class="hero-copy">
+                    <p class="eyebrow">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Open to backend, AI infrastructure &amp; security roles
+                    </p>
+                    <h1 id="hero-name">Vibhek Soni</h1>
+                    <p class="hero-line">
+                        Backend engineer in New York. I build
+                        <em>AI infrastructure</em> and <em>security tools</em>,
+                        usually by taking a protocol apart first.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-solid" href="#work">See the work</a>
+                        <a class="btn btn-ghost" href="https://github.com/vibheksoni" target="_blank" rel="me noopener noreferrer">GitHub</a>
+                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/vibheksoni/" target="_blank" rel="me noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+                <figure class="hero-photo">
+                    <img src="vibhek-soni-profile.jpg" width="640" height="800" alt="Vibhek Soni profile image" fetchpriority="high" decoding="async" />
+                    <figcaption>
+                        <span>New York, NY</span>
+                        <span>B.S. Computer Science, 2026</span>
+                    </figcaption>
+                </figure>
+
+                <dl class="proof" aria-label="Public numbers">
+                    <div>
+                        <dt>tokens served</dt>
+                        <dd>183B+</dd>
+                        <span class="proof-src">FreeTheAI</span>
+                    </div>
+                    <div>
+                        <dt>API requests</dt>
+                        <dd>6.6M+</dd>
+                        <span class="proof-src">FreeTheAI</span>
+                    </div>
+                    <div>
+                        <dt>GitHub stars</dt>
+                        <dd>2.1k+</dd>
+                        <span class="proof-src">stealth-browser-mcp</span>
+                    </div>
+                    <div>
+                        <dt>community members</dt>
+                        <dd>19k+</dd>
+                        <span class="proof-src">FreeTheAI Discord</span>
+                    </div>
+                </dl>
+                <p class="proof-note">
+                    From FreeTheAI&rsquo;s
+                    <a href="https://freetheai.org/stats" target="_blank" rel="noopener noreferrer">public stats</a>
+                    and GitHub, Oct 2026.
+                </p>
             </section>
 
-            <section id="experience" aria-labelledby="experience-heading">
-                <h2 id="experience-heading">Experience</h2>
-                <ul class="list compact-list experience-list">
-                    <li>
-                        <span class="list-title"
-                            >Independent Software Developer</span
-                        >
-                        <span class="list-meta"
-                            >Self-employed &middot; 2022 &ndash; present</span
-                        >
-                        <span class="list-note"
-                            >Open-source backend, AI infrastructure, and
-                            security tools, including stealth-browser-mcp,
-                            UniClaudeProxy, and Rust SDKs.</span
-                        >
+            <div class="ticker" aria-hidden="true" data-ticker>
+                <div class="ticker-track">
+                    <span>Python</span><span>Go</span><span>Rust</span><span>FastAPI</span><span>Flask</span><span>Gin</span><span>PostgreSQL</span><span>Redis</span><span>MCP servers</span><span>Chrome DevTools Protocol</span><span>reverse engineering</span><span>protocol analysis</span><span>network scanning</span><span>Linux</span><span>Docker</span>
+                </div>
+            </div>
+
+            <section class="section" id="work" aria-labelledby="work-heading">
+                <div class="section-head">
+                    <span class="section-num">01</span>
+                    <h2 id="work-heading">Selected work</h2>
+                </div>
+
+                <article class="feature">
+                    <div class="feature-copy">
+                        <p class="tag">Founder &middot; 2025 &ndash; present &middot; Go</p>
+                        <h3><a href="https://freetheai.org/" target="_blank" rel="noopener noreferrer">FreeTheAI</a></h3>
+                        <p class="feature-lede">A free AI API and an open model marketplace behind one OpenAI-compatible endpoint.</p>
+                        <p>
+                            Free models from the FreeTheAI provider, paid plans
+                            for higher usage, and sellers who list models at
+                            their own prices. I built and run the Go gateway:
+                            API keys and accounts, wallet and credits, rate
+                            limits, abuse controls, usage metering, and routing
+                            by price or speed.
+                        </p>
+                        <ul class="chips"><li>Go</li><li>Gin</li><li>PostgreSQL</li><li>Redis</li><li>streaming</li></ul>
+                        <p class="links">
+                            <a href="https://freetheai.org/stats" target="_blank" rel="noopener noreferrer">Public stats</a>
+                            <a href="https://freetheai.org/docs" target="_blank" rel="noopener noreferrer">Docs</a>
+                            <a href="https://freetheai.org/status" target="_blank" rel="noopener noreferrer">Status</a>
+                        </p>
+                    </div>
+                    <figure class="feature-figure">
+                        <img src="freetheai-request-path.png" width="1660" height="714" loading="lazy" decoding="async" alt="FreeTheAI request path: clients call the Go gateway at api.freetheai.org/v1, which handles API keys, wallet and credits, rate limits, abuse controls, and usage metering, then a router picks an upstream by price or speed from a free model pool or marketplace sellers. PostgreSQL stores accounts and the usage ledger; Redis holds rate limits and shared request state." />
+                    </figure>
+                </article>
+
+                <ol class="rows">
+                    <li class="row">
+                        <a class="row-link" href="https://github.com/vibheksoni/stealth-browser-mcp" target="_blank" rel="noopener noreferrer">
+                            <span class="row-idx">02</span>
+                            <span class="row-main">
+                                <span class="row-title">stealth-browser-mcp</span>
+                                <span class="row-desc">MCP server that lets AI agents drive a real Chrome browser over the DevTools Protocol: network hooks, DOM extraction, UI cloning.</span>
+                            </span>
+                            <span class="row-meta">Python &middot; 2.1k stars &middot; 296 forks</span>
+                            <span class="row-arrow" aria-hidden="true">&#8599;</span>
+                        </a>
                     </li>
-                    <li>
-                        <span class="list-title">FreeTheAI</span>
-                        <span class="list-meta"
-                            >Builder and operator &middot; 2025 &ndash;
-                            present</span
-                        >
-                        <span class="list-note"
-                            >Go-backed OpenAI-compatible API gateway: auth,
-                            model routing, streaming, and usage
-                            tracking.</span
-                        >
+                    <li class="row">
+                        <a class="row-link" href="https://github.com/vibheksoni/UniClaudeProxy" target="_blank" rel="noopener noreferrer">
+                            <span class="row-idx">03</span>
+                            <span class="row-main">
+                                <span class="row-title">UniClaudeProxy</span>
+                                <span class="row-desc">FastAPI proxy that translates the Anthropic API to OpenAI, Gemini, DeepSeek, and Ollama, with streaming and tool calls.</span>
+                            </span>
+                            <span class="row-meta">Python &middot; FastAPI</span>
+                            <span class="row-arrow" aria-hidden="true">&#8599;</span>
+                        </a>
                     </li>
-                    <li>
-                        <span class="list-title"
-                            >Freelance Software Developer</span
-                        >
-                        <span class="list-meta"
-                            >Macan Studios &middot; Jun 2025 &ndash; Aug
-                            2026</span
-                        >
-                        <span class="list-note"
-                            >Discord bots, websites with custom backends, and
-                            Windows desktop software for private clients.</span
-                        >
+                    <li class="row">
+                        <a class="row-link" href="https://github.com/vibheksoni/unbuned" target="_blank" rel="noopener noreferrer">
+                            <span class="row-idx">04</span>
+                            <span class="row-main">
+                                <span class="row-title">unbuned</span>
+                                <span class="row-desc">Recovers the JavaScript bundled into Bun-compiled executables, for reverse engineering and malware analysis.</span>
+                            </span>
+                            <span class="row-meta">Python &middot; reverse engineering</span>
+                            <span class="row-arrow" aria-hidden="true">&#8599;</span>
+                        </a>
                     </li>
-                    <li>
-                        <span class="list-title">CyberShield</span>
-                        <span class="list-meta"
-                            >Co-developer &middot; 2023 &ndash; 2024</span
-                        >
-                        <span class="list-note"
-                            >Linux DDoS mitigation tool built with a friend,
-                            using iptables for traffic filtering. Versions
-                            written in C, V, and Python.</span
-                        >
+                    <li class="row">
+                        <a class="row-link" href="https://secrets.wtf/" target="_blank" rel="noopener noreferrer">
+                            <span class="row-idx">05</span>
+                            <span class="row-main">
+                                <span class="row-title">secrets.wtf</span>
+                                <span class="row-desc">Defensive index of 181 exposed Ollama and LM Studio hosts found through internet-wide scanning, with remediation steps.</span>
+                            </span>
+                            <span class="row-meta">ZMap &middot; Python</span>
+                            <span class="row-arrow" aria-hidden="true">&#8599;</span>
+                        </a>
                     </li>
-                </ul>
+                    <li class="row">
+                        <a class="row-link" href="https://github.com/vibheksoni/t3router" target="_blank" rel="noopener noreferrer">
+                            <span class="row-idx">06</span>
+                            <span class="row-main">
+                                <span class="row-title">t3router / axiomtrade-rs</span>
+                                <span class="row-desc">Rust API clients: a multi-model terminal client and an async trading SDK with WebSocket streams.</span>
+                            </span>
+                            <span class="row-meta">Rust</span>
+                            <span class="row-arrow" aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                    <li class="row">
+                        <a class="row-link" href="https://github.com/vibheksoni/dma-spoofer" target="_blank" rel="noopener noreferrer">
+                            <span class="row-idx">07</span>
+                            <span class="row-main">
+                                <span class="row-title">dma-spoofer / ferrox</span>
+                                <span class="row-desc">Rust research into Windows internals: hardware identifier spoofing over DMA, and an infostealer proof of concept.</span>
+                            </span>
+                            <span class="row-meta">Rust &middot; research</span>
+                            <span class="row-arrow" aria-hidden="true">&#8599;</span>
+                        </a>
+                    </li>
+                </ol>
+                <p class="more">
+                    More on <a href="https://github.com/vibheksoni" target="_blank" rel="me noopener noreferrer">GitHub</a>
+                    and write-ups on <a href="https://opendoors.wtf/" target="_blank" rel="me noopener noreferrer">OpenDoors</a>.
+                </p>
             </section>
 
-            <section id="introduction" aria-labelledby="introduction-heading">
-                <h2 id="introduction-heading">Introduction</h2>
-                <div class="intro-text">
-                    <p>
-                        Hello, I am Vibhek Soni. I got into programming by
-                        trying to understand how the network tools I kept
-                        running into on PlayStation actually worked. That
-                        curiosity led me to source code, networking tools, and
-                        eventually writing my own code in Notepad before I knew
-                        how it worked.
+            <section class="section" id="experience" aria-labelledby="experience-heading">
+                <div class="section-head">
+                    <span class="section-num">02</span>
+                    <h2 id="experience-heading">Experience</h2>
+                </div>
+                <ol class="timeline">
+                    <li>
+                        <span class="when">2022 &ndash; now</span>
+                        <div>
+                            <h3>Independent Software Developer</h3>
+                            <p class="where">Self-employed &middot; open source</p>
+                            <p>Backend, AI infrastructure, and security tools, including stealth-browser-mcp, UniClaudeProxy, and Rust SDKs.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="when">2025 &ndash; now</span>
+                        <div>
+                            <h3>Founder, FreeTheAI</h3>
+                            <p class="where">Builder and operator</p>
+                            <p>Free AI API and model marketplace on a Go gateway: auth, routing, metering, and abuse controls.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="when">Jun 2025 &ndash; Aug 2026</span>
+                        <div>
+                            <h3>Freelance Software Developer</h3>
+                            <p class="where">Macan Studios</p>
+                            <p>Discord bots, websites with custom backends, and Windows desktop software for private clients.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="when">2023 &ndash; 2024</span>
+                        <div>
+                            <h3>Co-developer, CyberShield</h3>
+                            <p class="where">With a friend</p>
+                            <p>Linux DDoS mitigation tool using iptables for traffic filtering, with versions in C, V, and Python.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="section" id="about" aria-labelledby="about-heading">
+                <div class="section-head">
+                    <span class="section-num">03</span>
+                    <h2 id="about-heading">About</h2>
+                </div>
+                <div class="about">
+                    <p class="about-lede">
+                        I got into programming trying to understand how the
+                        network tools I kept running into on PlayStation
+                        <em>actually worked</em>.
                     </p>
-                    <p>
-                        I learned on my first laptop: Python first, then C, C#,
-                        WinForms, sockets, TCP servers, epoll, ZMap, and
-                        client-server systems. Today I build backend and AI
-                        infrastructure, browser automation, and protocol tools
-                        that handle large streams of requests.
-                    </p>
-                    <p>
-                        The pattern is the same for everything I work on: take
-                        something I do not understand, break it apart, figure
-                        out how it works, and build something with what I
-                        learned.
-                    </p>
+                    <div class="about-body">
+                        <p>
+                            That curiosity led me to source code, networking
+                            tools, and writing my own code in Notepad before I
+                            knew how it worked. I learned Python first, then C,
+                            C#, sockets, TCP servers, epoll, and ZMap.
+                        </p>
+                        <p>
+                            The pattern is the same for everything I build: take
+                            something I don&rsquo;t understand, break it apart,
+                            figure out how it works, and build on what I learned.
+                        </p>
+                    </div>
+                    <dl class="stack">
+                        <div><dt>Languages</dt><dd>Python, Go, Rust, C, SQL</dd></div>
+                        <div><dt>Backend</dt><dd>FastAPI, Flask, Gin, PostgreSQL, Redis, WebSockets</dd></div>
+                        <div><dt>Security</dt><dd>Reverse engineering, protocol analysis, network scanning, iptables</dd></div>
+                        <div><dt>AI tooling</dt><dd>MCP servers, LLM APIs, model routing, embeddings</dd></div>
+                    </dl>
+                    <ul class="creds">
+                        <li><span>B.S. Computer Science</span><span>Western Governors University &middot; Sep 2026</span></li>
+                        <li><span>ITIL 4 Foundation</span><span>PeopleCert &middot; Aug 2026 &middot; <a href="https://badges.peoplecert.org/Badge/en/2/3CCF0E54-7F7F-40A5-A9AC-BF1FB204B1AA" target="_blank" rel="noopener noreferrer">verify</a></span></li>
+                        <li><span>Linux Essentials</span><span>Linux Professional Institute &middot; Jul 2026 &middot; <a href="https://www.credly.com/badges/60d6cd3d-fbda-4552-8f37-b6ea79a85471" target="_blank" rel="noopener noreferrer">verify</a></span></li>
+                        <li><span>Introduction to Cybersecurity</span><span>Cisco &middot; Mar 2021 &middot; <a href="https://www.credly.com/badges/6b8b3185-bd04-405e-92ca-134c70312e95" target="_blank" rel="noopener noreferrer">verify</a></span></li>
+                    </ul>
                 </div>
             </section>
 
-            <section id="research" aria-labelledby="research-heading">
-                <h2 id="research-heading">Security Research</h2>
-                <ul class="list research-list">
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://secrets.wtf/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >secrets.wtf</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Defensive index of publicly exposed Ollama and LM
-                            Studio infrastructure.</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://opendoors.wtf/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >OpenDoors</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Backend engineering notes, browser security, and
-                            defensive analysis.</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://github.com/vibheksoni/unbuned"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >unbuned</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Python reverse engineering tool for extracting
-                            JavaScript from Bun executables.</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://github.com/vibheksoni/dma-spoofer"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >dma-spoofer</a
-                            >
-                            /
-                            <a
-                                href="https://github.com/vibheksoni/ferrox"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >ferrox</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Rust research into Windows internals: hardware
-                            identifier spoofing over DMA (dma-spoofer) and an
-                            infostealer proof of concept (ferrox).</span
-                        >
-                    </li>
-                </ul>
-            </section>
-
-            <section id="stack" aria-labelledby="stack-heading">
-                <h2 id="stack-heading">Technical Stack</h2>
-                <ul class="list compact-list">
-                    <li>
-                        <span class="list-title">Languages</span
-                        ><span class="list-note"
-                            >Python (strongest), Rust, Go, C</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title">Backend</span
-                        ><span class="list-note"
-                            >FastAPI, Flask, API gateways, auth, WebSockets,
-                            queues</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title">AI tooling</span
-                        ><span class="list-note"
-                            >OpenAI-compatible APIs, MCP servers, retrieval,
-                            agents</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title">Systems &amp; ops</span
-                        ><span class="list-note"
-                            >Windows 11 primary workstation; Linux for
-                            deployments, network operations, and tooling.
-                            Docker, Redis, PostgreSQL, GitHub Actions.</span
-                        >
-                    </li>
-                </ul>
-            </section>
-
-            <section id="education" aria-labelledby="education-heading">
-                <h2 id="education-heading">Education &amp; Certifications</h2>
-                <ul class="list credentials-list">
-                    <li>
-                        <span class="list-title"
-                            >Western Governors University</span
-                        >
-                        <span class="list-note"
-                            >B.S. Computer Science &middot; Graduated Sep
-                            2026</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title">LPI Linux Essentials</span>
-                        <span class="list-note"
-                            >Linux Professional Institute &middot; Jul 2026</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title">ITIL 4 Foundation</span>
-                        <span class="list-note"
-                            >PeopleCert &middot; Aug 2026</span
-                        >
-                    </li>
-                </ul>
-            </section>
-
-            <section id="contact" aria-labelledby="contact-heading">
-                <h2 id="contact-heading">Contact</h2>
-                <ul class="list compact-list">
-                    <li>
-                        <span class="list-title email-row"
-                            ><a href="mailto:vibheksoni@engineer.com"
-                                >vibheksoni@engineer.com</a
-                            >
-                            <button
-                                class="copy-button"
-                                type="button"
-                                data-copy-value="vibheksoni@engineer.com"
-                            >
-                                [copy]
-                            </button>
-                            <span
-                                class="copy-status"
-                                aria-live="polite"
-                            ></span></span
-                        >
-                        <span class="list-note"
-                            >Jobs, consulting, collaboration, and project
-                            questions.</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title contact-links"
-                            ><a
-                                href="https://github.com/vibheksoni"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >GitHub: vibheksoni</a
-                            ><a
-                                href="https://x.com/ImVibhek"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >X: @ImVibhek</a
-                            ><a
-                                href="https://www.linkedin.com/in/vibheksoni/"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >LinkedIn: /in/vibheksoni</a
-                            ><a
-                                href="https://context7.com/vibheksoni"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >Context7: vibheksoni</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Code, current work, and professional profile.</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title contact-links"
-                            ><a
-                                href="https://opendoors.wtf/"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >OpenDoors blog</a
-                            ><a
-                                href="https://secrets.wtf/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >secrets.wtf</a
-                            ><a
-                                href="https://freetheai.org/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >FreeTheAI</a
-                            ><a
-                                href="https://deepwiki.com/vibheksoni"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >DeepWiki</a
-                            ><a
-                                href="https://www.instagram.com/nyc.vibhek/"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >Instagram</a
-                            ><a
-                                href="https://www.youtube.com/@vibheksoni"
-                                target="_blank"
-                                rel="me noopener noreferrer"
-                                >YouTube</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Defensive AI infrastructure listings, public
-                            systems, research notes, and profile links.</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            ><a
-                                href="https://buymeacoffee.com/vibheksoni"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >Buy Me a Coffee</a
-                            ></span
-                        >
-                        <span class="list-note"
-                            >Support the independent work behind these
-                            projects.</span
-                        >
-                    </li>
-                    <li>
-                        <span class="list-title"
-                            >New York / backend systems</span
-                        >
-                        <span class="list-note"
-                            >Backend platforms, AI infrastructure, developer
-                            tools, and security research.</span
-                        >
-                    </li>
+            <section class="section contact" id="contact" aria-labelledby="contact-heading">
+                <div class="section-head">
+                    <span class="section-num">04</span>
+                    <h2 id="contact-heading">Contact</h2>
+                </div>
+                <p class="contact-line">
+                    Hiring for backend, AI infrastructure, or security?
+                    <em>Let&rsquo;s talk.</em>
+                </p>
+                <div class="contact-email">
+                    <a href="mailto:vibheksoni@engineer.com">vibheksoni@engineer.com</a>
+                    <button class="copy-button" type="button" data-copy-value="vibheksoni@engineer.com">Copy</button>
+                    <span class="copy-status" aria-live="polite"></span>
+                </div>
+                <ul class="socials">
+                    <li><a href="https://github.com/vibheksoni" target="_blank" rel="me noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/vibheksoni/" target="_blank" rel="me noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://x.com/ImVibhek" target="_blank" rel="me noopener noreferrer">X</a></li>
+                    <li><a href="https://opendoors.wtf/" target="_blank" rel="me noopener noreferrer">OpenDoors</a></li>
+                    <li><a href="https://deepwiki.com/vibheksoni" target="_blank" rel="me noopener noreferrer">DeepWiki</a></li>
+                    <li><a href="https://www.youtube.com/@vibheksoni" target="_blank" rel="me noopener noreferrer">YouTube</a></li>
+                    <li><a href="https://buymeacoffee.com/vibheksoni" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a></li>
                 </ul>
             </section>
         </main>
 
-        <footer>
-            <span>Vibhek Soni / New York</span>
-            <span>last updated: October 1, 2026</span>
+        <footer class="footer">
+            <span>Vibhek Soni &middot; also known as vibheksoni / @ImVibhek</span>
+            <span>New York &middot; updated October 5, 2026</span>
         </footer>
-        <script src="js/main.js"></script>
+        <script src="js/main.js?v=20261005"></script>
     </body>
 </html>
