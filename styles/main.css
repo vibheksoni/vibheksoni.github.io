@@ -1,17 +1,20 @@
 :root {
     --bg: #141210;
     --ink: #ece6dc;
+    --body: #cbc3b6;
     --muted: #a8a094;
-    --faint: #6f685e;
-    --rule: #2b2724;
+    --faint: #7a7368;
+    --rule: #2e2a26;
     --link: #f0b26b;
 
     --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
     --mono: "IBM Plex Mono", Consolas, monospace;
 
+    --page: 66rem;
+    --rail: 10.5rem;
+    --gap: clamp(28px, 4vw, 56px);
     --measure: 40rem;
-    --gutter: clamp(20px, 6vw, 72px);
-    --inset: clamp(20px, 13vw, 220px);
+    --gutter: clamp(20px, 5vw, 56px);
 }
 
 * {
@@ -25,7 +28,6 @@ html {
 
 body {
     margin: 0;
-    padding: 0 var(--gutter) 0 var(--inset);
     color: var(--ink);
     background: var(--bg);
     font-family: var(--serif);
@@ -60,6 +62,10 @@ strong {
     font-weight: 600;
 }
 
+p {
+    margin: 0;
+}
+
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -73,15 +79,17 @@ strong {
     background: var(--link);
 }
 
-.top,
-main,
-.foot {
-    max-width: var(--measure);
+/* One centered page rail shared by header, main, and footer. */
+.page {
+    max-width: calc(var(--page) + 2 * var(--gutter));
+    margin: 0 auto;
+    padding: 0 var(--gutter);
 }
 
 .top {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-between;
     gap: 8px 24px;
     padding: 28px 0 0;
@@ -96,7 +104,7 @@ main,
 
 .top nav {
     display: flex;
-    gap: 20px;
+    gap: 22px;
 }
 
 .top nav a {
@@ -108,35 +116,66 @@ main,
     color: var(--ink);
 }
 
-main {
-    padding-top: clamp(56px, 10vw, 104px);
+/* Two columns: dates and labels on the left, content on the right. */
+.row {
+    display: grid;
+    grid-template-columns: var(--rail) minmax(0, 1fr);
+    column-gap: var(--gap);
 }
 
-.portrait {
+.row > .body {
+    grid-column: 2;
+    max-width: var(--measure);
+}
+
+.row > .when {
+    grid-column: 1;
+    padding-top: 0.42em;
+}
+
+.when {
+    color: var(--faint);
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.body p + p {
+    margin-top: 1em;
+}
+
+main {
+    padding-top: clamp(56px, 9vw, 112px);
+}
+
+.intro .portrait {
+    grid-column: 1;
     display: block;
-    width: 112px;
-    height: 112px;
+    width: 100%;
+    max-width: 148px;
+    height: auto;
+    aspect-ratio: 1;
     object-fit: cover;
     object-position: 50% 30%;
     border-radius: 2px;
 }
 
 h1 {
-    margin: 28px 0 0;
-    font-size: clamp(2.4rem, 6vw, 3.2rem);
+    margin: -0.12em 0 0;
+    font-size: clamp(2.4rem, 5vw, 3.25rem);
     font-weight: 600;
     line-height: 1.08;
     letter-spacing: -0.02em;
 }
 
 .lead {
-    margin-top: 18px;
+    margin-top: 20px;
     font-size: 1.32rem;
     line-height: 1.5;
 }
 
-p {
-    margin: 1em 0 0;
+.intro .lead + p {
+    margin-top: 1.1em;
 }
 
 section {
@@ -144,58 +183,48 @@ section {
 }
 
 section + section {
-    margin-top: clamp(64px, 9vw, 96px);
+    margin-top: clamp(64px, 8vw, 96px);
 }
 
 h2 {
-    margin: 0 0 8px;
-    padding-bottom: 8px;
+    margin: 0 0 4px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--rule);
     color: var(--muted);
-    font-size: 1rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+section > .row {
+    margin-top: 30px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.3rem;
     font-weight: 600;
-    letter-spacing: 0.01em;
+    line-height: 1.35;
 }
 
-.project + .project {
-    margin-top: 34px;
-}
-
-.project h3,
-.jobs dt {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 2px 16px;
-    margin: 26px 0 0;
-    font-size: 1.32rem;
-    font-weight: 600;
-    line-height: 1.3;
-}
-
-.project h3 a {
+h3 a {
     color: var(--ink);
 }
 
-.project h3 a:hover {
+h3 a:hover {
     color: var(--link);
 }
 
-.when {
-    color: var(--faint);
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    font-weight: 400;
-}
-
-.project p {
+h3 + p {
     margin-top: 6px;
-    color: var(--muted);
+    color: var(--body);
 }
 
+/* The diagram spans both columns so its labels stay readable. */
 figure {
-    margin: 22px 0 0;
+    grid-column: 1 / -1;
+    margin: 28px 0 0;
 }
 
 figure img {
@@ -205,56 +234,45 @@ figure img {
 }
 
 figcaption {
-    margin-top: 8px;
+    margin-top: 10px;
+    margin-left: calc(var(--rail) + var(--gap));
     color: var(--faint);
     font-size: 0.92rem;
     font-style: italic;
 }
 
 .also {
-    margin-top: 34px;
-    color: var(--muted);
+    color: var(--body);
 }
 
-.jobs {
-    margin: 0;
+#about .body p {
+    color: var(--body);
 }
 
-.jobs div + div {
-    margin-top: 22px;
-}
-
-.jobs dt {
-    font-size: 1.12rem;
-}
-
-.jobs dd {
-    margin: 4px 0 0;
-    color: var(--muted);
-}
-
-#about p {
-    color: var(--muted);
-}
-
-#about p:first-of-type {
+#about .body p:first-child {
     color: var(--ink);
 }
 
-.creds {
-    margin: 22px 0 0;
-    padding-left: 1.1em;
-    color: var(--muted);
+section > .creds {
+    margin-top: 10px;
 }
 
-.creds li + li {
-    margin-top: 4px;
+section > .row:not(.creds) + .creds {
+    margin-top: 30px;
+}
+
+.creds .body {
+    color: var(--body);
+}
+
+#contact .body {
+    color: var(--ink);
 }
 
 .copy {
     margin-left: 8px;
     padding: 2px 6px;
-    color: var(--faint);
+    color: var(--muted);
     background: none;
     border: 1px solid var(--rule);
     border-radius: 3px;
@@ -277,29 +295,48 @@ figcaption {
 }
 
 .foot {
-    margin-top: clamp(72px, 10vw, 112px);
+    margin-top: clamp(72px, 10vw, 120px);
     padding: 20px 0 48px;
     border-top: 1px solid var(--rule);
     color: var(--faint);
     font-size: 0.92rem;
 }
 
-.foot p {
-    margin: 0;
-}
-
-@media (max-width: 560px) {
+@media (max-width: 760px) {
     body {
-        padding: 0 20px;
         font-size: 1.0625rem;
     }
 
-    .top-name {
-        padding: 4px 0;
+    .row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .row > .body,
+    .row > .when,
+    .intro .portrait {
+        grid-column: 1;
+    }
+
+    .row > .when {
+        padding-top: 0;
+        margin-bottom: 2px;
+    }
+
+    .intro .portrait {
+        max-width: 96px;
+        margin-bottom: 24px;
     }
 
     .lead {
         font-size: 1.18rem;
+    }
+
+    figcaption {
+        margin-left: 0;
+    }
+
+    .top-name {
+        padding: 4px 0;
     }
 
     .top nav {
@@ -308,10 +345,5 @@ figcaption {
 
     .top nav a {
         padding: 6px 0;
-    }
-
-    .portrait {
-        width: 88px;
-        height: 88px;
     }
 }

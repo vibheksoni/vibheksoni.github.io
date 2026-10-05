@@ -132,7 +132,7 @@
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles/main.css?v=20261005-plain" />
+        <link rel="stylesheet" href="styles/main.css?v=20261005-rail" />
 
         <script type="application/ld+json">
             {
@@ -279,173 +279,228 @@
     <body>
         <a class="skip-link" href="#content">Skip to content</a>
 
-        <header class="top">
-            <a class="top-name" href="/">Vibhek Soni</a>
-            <nav aria-label="Sections">
-                <a href="#work">Work</a>
-                <a href="#experience">Experience</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+        <div class="page">
+            <header class="top">
+                <a class="top-name" href="/">Vibhek Soni</a>
+                <nav aria-label="Sections">
+                    <a href="#work">Work</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
 
-        <main id="content">
-            <section class="intro" aria-labelledby="name">
-                <img class="portrait" src="vibhek-soni-profile.jpg" width="640" height="800" alt="Vibhek Soni profile image" fetchpriority="high" decoding="async" />
-                <h1 id="name">Vibhek Soni</h1>
-                <p class="lead">
-                    I&rsquo;m a backend engineer in New York. I build API
-                    infrastructure and security tools, usually by taking a
-                    protocol apart first and building on what I learn.
-                </p>
-                <p>
-                    I run <a href="https://freetheai.org/">FreeTheAI</a>, an
-                    OpenAI-compatible API that has served
-                    <strong>183 billion tokens across 6.6 million requests</strong>
-                    (<a href="https://freetheai.org/stats">public stats</a>), and I
-                    maintain <a href="https://github.com/vibheksoni/stealth-browser-mcp">stealth-browser-mcp</a>,
-                    which has <strong>2,100+ stars</strong> on GitHub.
-                </p>
-                <p>
-                    I finished my B.S. in Computer Science in September 2026 and
-                    I&rsquo;m looking for backend, AI infrastructure, or security
-                    work. Email me at
-                    <a href="mailto:vibheksoni@engineer.com">vibheksoni@engineer.com</a>.
-                </p>
-            </section>
-
-            <section id="work" aria-labelledby="work-heading">
-                <h2 id="work-heading">Work</h2>
-
-                <article class="project">
-                    <h3><a href="https://freetheai.org/">FreeTheAI</a> <span class="when">2025 to now</span></h3>
-                    <p>
-                        A free AI API and an open model marketplace behind one
-                        OpenAI-compatible endpoint. The FreeTheAI provider offers
-                        free models, paid plans cover higher usage, and sellers
-                        list models at their own prices. I built and run the Go
-                        gateway: API keys and accounts, wallet and credits, rate
-                        limits, abuse controls, usage metering, and routing by
-                        price or speed. Go, Gin, PostgreSQL, Redis.
-                    </p>
-                    <figure>
-                        <img src="freetheai-request-path.png" width="1660" height="714" loading="lazy" decoding="async" alt="FreeTheAI request path: clients call the Go gateway at api.freetheai.org/v1, which handles API keys, wallet and credits, rate limits, abuse controls, and usage metering, then a router picks an upstream by price or speed from a free model pool or marketplace sellers. PostgreSQL stores accounts and the usage ledger; Redis holds rate limits and shared request state." />
-                        <figcaption>How a request moves through FreeTheAI.</figcaption>
-                    </figure>
-                </article>
-
-                <article class="project">
-                    <h3><a href="https://github.com/vibheksoni/stealth-browser-mcp">stealth-browser-mcp</a> <span class="when">2025 to now</span></h3>
-                    <p>
-                        An MCP server that lets AI agents drive a real Chrome
-                        browser over the DevTools Protocol, with network hooks,
-                        DOM extraction, and UI cloning. Python and FastMCP.
-                        2,100+ stars and 296 forks.
-                    </p>
-                </article>
-
-                <article class="project">
-                    <h3><a href="https://github.com/vibheksoni/UniClaudeProxy">UniClaudeProxy</a></h3>
-                    <p>
-                        A FastAPI proxy that translates the Anthropic API to
-                        OpenAI, Gemini, DeepSeek, and Ollama, so Claude Code can
-                        run against other model backends with streaming and tool
-                        calls.
-                    </p>
-                </article>
-
-                <article class="project">
-                    <h3><a href="https://github.com/vibheksoni/unbuned">unbuned</a></h3>
-                    <p>
-                        Recovers the JavaScript bundled inside Bun-compiled
-                        executables, for reverse engineering, malware analysis,
-                        and code recovery.
-                    </p>
-                </article>
-
-                <article class="project">
-                    <h3><a href="https://secrets.wtf/">secrets.wtf</a></h3>
-                    <p>
-                        A defensive index of 181 exposed Ollama and LM Studio
-                        hosts, found through internet-wide scanning and listed
-                        with remediation steps. The write-ups live on
-                        <a href="https://opendoors.wtf/">OpenDoors</a>.
-                    </p>
-                </article>
-
-                <p class="also">
-                    Also: <a href="https://github.com/vibheksoni/t3router">t3router</a> and
-                    <a href="https://github.com/vibheksoni/axiomtrade-rs">axiomtrade-rs</a> (Rust API clients),
-                    <a href="https://github.com/vibheksoni/VerbalCodeAi">VerbalCodeAI</a> (local code search),
-                    <a href="https://github.com/vibheksoni/dma-spoofer">dma-spoofer</a> and
-                    <a href="https://github.com/vibheksoni/ferrox">ferrox</a> (Rust research into Windows internals).
-                    Everything else is on <a href="https://github.com/vibheksoni">GitHub</a>.
-                </p>
-            </section>
-
-            <section id="experience" aria-labelledby="experience-heading">
-                <h2 id="experience-heading">Experience</h2>
-                <dl class="jobs">
-                    <div>
-                        <dt>Independent software developer <span class="when">2022 to now</span></dt>
-                        <dd>Open-source backend, AI infrastructure, and security tools.</dd>
+            <main id="content">
+                <section class="intro row" aria-labelledby="name">
+                    <img class="portrait" src="vibhek-soni-profile.jpg" width="640" height="800" alt="Vibhek Soni profile image" fetchpriority="high" decoding="async" />
+                    <div class="body">
+                        <h1 id="name">Vibhek Soni</h1>
+                        <p class="lead">
+                            I&rsquo;m a backend engineer in New York. I build API
+                            infrastructure and security tools, usually by taking a
+                            protocol apart first and building on what I learn.
+                        </p>
+                        <p>
+                            I run <a href="https://freetheai.org/">FreeTheAI</a>, an
+                            OpenAI-compatible API that has served
+                            <strong>183 billion tokens across 6.6 million requests</strong>
+                            (<a href="https://freetheai.org/stats">public stats</a>), and I
+                            maintain <a href="https://github.com/vibheksoni/stealth-browser-mcp">stealth-browser-mcp</a>,
+                            which has <strong>2,100+ stars</strong> on GitHub.
+                        </p>
+                        <p>
+                            I finished my B.S. in Computer Science in September 2026 and
+                            I&rsquo;m looking for backend, AI infrastructure, or security
+                            work. Email me at
+                            <a href="mailto:vibheksoni@engineer.com">vibheksoni@engineer.com</a>.
+                        </p>
                     </div>
-                    <div>
-                        <dt>Founder, FreeTheAI <span class="when">2025 to now</span></dt>
-                        <dd>Built and operate the API, marketplace, and Go gateway described above.</dd>
-                    </div>
-                    <div>
-                        <dt>Freelance developer, Macan Studios <span class="when">Jun 2025 to Aug 2026</span></dt>
-                        <dd>Discord bots, websites with custom backends, and Windows desktop software for private clients.</dd>
-                    </div>
-                    <div>
-                        <dt>Co-developer, CyberShield <span class="when">2023 to 2024</span></dt>
-                        <dd>A Linux DDoS mitigation tool built with a friend, using iptables for traffic filtering, with versions in C, V, and Python.</dd>
-                    </div>
-                </dl>
-            </section>
+                </section>
 
-            <section id="about" aria-labelledby="about-heading">
-                <h2 id="about-heading">About</h2>
-                <p>
-                    I got into programming trying to understand how the network
-                    tools I kept running into on PlayStation actually worked.
-                    That led me to source code, then to writing my own code in
-                    Notepad before I really knew how it worked. Python came
-                    first, then C, C#, sockets, TCP servers, epoll, and ZMap.
-                </p>
-                <p>
-                    These days I mostly write Python and Go, with some Rust and
-                    C. I reach for FastAPI, Flask, Gin, PostgreSQL, and Redis on
-                    the backend, and Chrome DevTools Protocol, reverse
-                    engineering, and network scanning for security work.
-                </p>
-                <ul class="creds">
-                    <li>B.S. Computer Science, Western Governors University, 2026</li>
-                    <li>ITIL 4 Foundation, PeopleCert, 2026 (<a href="https://badges.peoplecert.org/Badge/en/2/3CCF0E54-7F7F-40A5-A9AC-BF1FB204B1AA">verify</a>)</li>
-                    <li>Linux Essentials, Linux Professional Institute, 2026 (<a href="https://www.credly.com/badges/60d6cd3d-fbda-4552-8f37-b6ea79a85471">verify</a>)</li>
-                    <li>Introduction to Cybersecurity, Cisco, 2021 (<a href="https://www.credly.com/badges/6b8b3185-bd04-405e-92ca-134c70312e95">verify</a>)</li>
-                </ul>
-            </section>
+                <section id="work" aria-labelledby="work-heading">
+                    <h2 id="work-heading">Work</h2>
 
-            <section id="contact" aria-labelledby="contact-heading">
-                <h2 id="contact-heading">Contact</h2>
-                <p>
-                    The fastest way to reach me is
-                    <a href="mailto:vibheksoni@engineer.com">vibheksoni@engineer.com</a><button class="copy" type="button" data-copy-value="vibheksoni@engineer.com">copy</button><span class="copy-status" aria-live="polite"></span>.
-                    I&rsquo;m also on
-                    <a href="https://github.com/vibheksoni" rel="me">GitHub</a>,
-                    <a href="https://www.linkedin.com/in/vibheksoni/" rel="me">LinkedIn</a>,
-                    <a href="https://x.com/ImVibhek" rel="me">X</a>, and
-                    <a href="https://www.youtube.com/@vibheksoni" rel="me">YouTube</a>,
-                    and I write at <a href="https://opendoors.wtf/" rel="me">OpenDoors</a>.
-                </p>
-            </section>
-        </main>
+                    <article class="row">
+                        <p class="when">2025 to now</p>
+                        <div class="body">
+                            <h3><a href="https://freetheai.org/">FreeTheAI</a></h3>
+                            <p>
+                                A free AI API and an open model marketplace behind one
+                                OpenAI-compatible endpoint. The FreeTheAI provider offers
+                                free models, paid plans cover higher usage, and sellers
+                                list models at their own prices. I built and run the Go
+                                gateway: API keys and accounts, wallet and credits, rate
+                                limits, abuse controls, usage metering, and routing by
+                                price or speed. Go, Gin, PostgreSQL, Redis.
+                            </p>
+                        </div>
+                        <figure>
+                            <a href="freetheai-request-path.png"><img src="freetheai-request-path.png" width="1660" height="714" loading="lazy" decoding="async" alt="FreeTheAI request path: clients call the Go gateway at api.freetheai.org/v1, which handles API keys, wallet and credits, rate limits, abuse controls, and usage metering, then a router picks an upstream by price or speed from a free model pool or marketplace sellers. PostgreSQL stores accounts and the usage ledger; Redis holds rate limits and shared request state." /></a>
+                            <figcaption>How a request moves through FreeTheAI. Open the image for full size.</figcaption>
+                        </figure>
+                    </article>
 
-        <footer class="foot">
-            <p>Vibhek Soni, also known as vibheksoni and @ImVibhek. New York. Updated October 5, 2026.</p>
-        </footer>
+                    <article class="row">
+                        <p class="when">2025 to now</p>
+                        <div class="body">
+                            <h3><a href="https://github.com/vibheksoni/stealth-browser-mcp">stealth-browser-mcp</a></h3>
+                            <p>
+                                An MCP server that lets AI agents drive a real Chrome
+                                browser over the DevTools Protocol, with network hooks,
+                                DOM extraction, and UI cloning. Python and FastMCP.
+                                2,100+ stars and 296 forks.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="row">
+                        <p class="when">2026</p>
+                        <div class="body">
+                            <h3><a href="https://github.com/vibheksoni/UniClaudeProxy">UniClaudeProxy</a></h3>
+                            <p>
+                                A FastAPI proxy that translates the Anthropic API to
+                                OpenAI, Gemini, DeepSeek, and Ollama, so Claude Code can
+                                run against other model backends with streaming and tool
+                                calls.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="row">
+                        <p class="when">2026</p>
+                        <div class="body">
+                            <h3><a href="https://github.com/vibheksoni/unbuned">unbuned</a></h3>
+                            <p>
+                                Recovers the JavaScript bundled inside Bun-compiled
+                                executables, for reverse engineering, malware analysis,
+                                and code recovery.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="row">
+                        <p class="when">2026</p>
+                        <div class="body">
+                            <h3><a href="https://secrets.wtf/">secrets.wtf</a></h3>
+                            <p>
+                                A defensive index of 181 exposed Ollama and LM Studio
+                                hosts, found through internet-wide scanning and listed
+                                with remediation steps. The write-ups live on
+                                <a href="https://opendoors.wtf/">OpenDoors</a>.
+                            </p>
+                        </div>
+                    </article>
+
+                    <div class="row">
+                        <p class="when">Also</p>
+                        <p class="body also">
+                            <a href="https://github.com/vibheksoni/t3router">t3router</a> and
+                            <a href="https://github.com/vibheksoni/axiomtrade-rs">axiomtrade-rs</a> (Rust API clients),
+                            <a href="https://github.com/vibheksoni/VerbalCodeAi">VerbalCodeAI</a> (local code search),
+                            <a href="https://github.com/vibheksoni/dma-spoofer">dma-spoofer</a> and
+                            <a href="https://github.com/vibheksoni/ferrox">ferrox</a> (Rust research into Windows internals).
+                            Everything else is on <a href="https://github.com/vibheksoni">GitHub</a>.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="experience" aria-labelledby="experience-heading">
+                    <h2 id="experience-heading">Experience</h2>
+
+                    <article class="row">
+                        <p class="when">2022 to now</p>
+                        <div class="body">
+                            <h3>Independent software developer</h3>
+                            <p>Open-source backend, AI infrastructure, and security tools.</p>
+                        </div>
+                    </article>
+
+                    <article class="row">
+                        <p class="when">2025 to now</p>
+                        <div class="body">
+                            <h3>Founder, FreeTheAI</h3>
+                            <p>Built and operate the API, marketplace, and Go gateway described above.</p>
+                        </div>
+                    </article>
+
+                    <article class="row">
+                        <p class="when">Jun 2025 to Aug 2026</p>
+                        <div class="body">
+                            <h3>Freelance developer, Macan Studios</h3>
+                            <p>Discord bots, websites with custom backends, and Windows desktop software for private clients.</p>
+                        </div>
+                    </article>
+
+                    <article class="row">
+                        <p class="when">2023 to 2024</p>
+                        <div class="body">
+                            <h3>Co-developer, CyberShield</h3>
+                            <p>A Linux DDoS mitigation tool built with a friend, using iptables for traffic filtering, with versions in C, V, and Python.</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="about" aria-labelledby="about-heading">
+                    <h2 id="about-heading">About</h2>
+
+                    <div class="row">
+                        <div class="body">
+                            <p>
+                                I got into programming trying to understand how the network
+                                tools I kept running into on PlayStation actually worked.
+                                That led me to source code, then to writing my own code in
+                                Notepad before I really knew how it worked. Python came
+                                first, then C, C#, sockets, TCP servers, epoll, and ZMap.
+                            </p>
+                            <p>
+                                These days I mostly write Python and Go, with some Rust and
+                                C. I reach for FastAPI, Flask, Gin, PostgreSQL, and Redis on
+                                the backend, and Chrome DevTools Protocol, reverse
+                                engineering, and network scanning for security work.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row creds">
+                        <p class="when">2026</p>
+                        <p class="body">B.S. Computer Science, Western Governors University</p>
+                    </div>
+                    <div class="row creds">
+                        <p class="when">2026</p>
+                        <p class="body">ITIL 4 Foundation, PeopleCert (<a href="https://badges.peoplecert.org/Badge/en/2/3CCF0E54-7F7F-40A5-A9AC-BF1FB204B1AA">verify</a>)</p>
+                    </div>
+                    <div class="row creds">
+                        <p class="when">2026</p>
+                        <p class="body">Linux Essentials, Linux Professional Institute (<a href="https://www.credly.com/badges/60d6cd3d-fbda-4552-8f37-b6ea79a85471">verify</a>)</p>
+                    </div>
+                    <div class="row creds">
+                        <p class="when">2021</p>
+                        <p class="body">Introduction to Cybersecurity, Cisco (<a href="https://www.credly.com/badges/6b8b3185-bd04-405e-92ca-134c70312e95">verify</a>)</p>
+                    </div>
+                </section>
+
+                <section id="contact" aria-labelledby="contact-heading">
+                    <h2 id="contact-heading">Contact</h2>
+
+                    <div class="row">
+                        <p class="body">
+                            The fastest way to reach me is
+                            <a href="mailto:vibheksoni@engineer.com">vibheksoni@engineer.com</a><button class="copy" type="button" data-copy-value="vibheksoni@engineer.com">copy</button><span class="copy-status" aria-live="polite"></span>.
+                            I&rsquo;m also on
+                            <a href="https://github.com/vibheksoni" rel="me">GitHub</a>,
+                            <a href="https://www.linkedin.com/in/vibheksoni/" rel="me">LinkedIn</a>,
+                            <a href="https://x.com/ImVibhek" rel="me">X</a>, and
+                            <a href="https://www.youtube.com/@vibheksoni" rel="me">YouTube</a>,
+                            and I write at <a href="https://opendoors.wtf/" rel="me">OpenDoors</a>.
+                        </p>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="foot">
+                <p>Vibhek Soni, also known as vibheksoni and @ImVibhek. New York. Updated October 5, 2026.</p>
+            </footer>
+        </div>
         <script src="js/main.js?v=20261005b"></script>
     </body>
 </html>
